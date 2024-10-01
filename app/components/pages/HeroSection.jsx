@@ -1,43 +1,55 @@
-import p1 from "../Images/Abstract.jpg"
-import p2 from "../Images/oo.jpg"
-import p3 from "../Images/Pixels-Wallpaper (1).jpeg"
-import p4 from "../Images/Pixels-Wallpaper (15).jpg"
-export default function Home() {
+import Inter from '@next/font/google';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Logo from './logo';
+export default function Hero() {
   return (
-    <div className="relative h-screen w-screen overflow-hidden">
-      <div className="absolute top-0 left-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]" />
-      <div className="relative text-white h-full flex flex-col justify-center items-center px-4">
-        <div className="text-center space-y-6">
-          <h1 className="text-3xl md:text-5xl font-bold">
-            High-performing teams of <span className="text-teal-400">vetted software engineers</span>.
-          </h1>
-          <p className="text-gray-300 font-semibold">
-            Scale your team up and down with the top 1.36% talent skilled in React, Node.js, .NET, and AWS.
-          </p>
-          <div className="flex justify-center space-x-4 mt-4">
-            <div className="w-16 h-16 rounded-full bg-gray-700 flex justify-center items-center overflow-hidden">
-              <img src={p1.src} alt="Engineer" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-16 h-16 rounded-full bg-gray-700 flex justify-center items-center overflow-hidden">
-              <img src={p2.src} alt="Engineer" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-16 h-16 rounded-full bg-gray-700 flex justify-center items-center overflow-hidden">
-              <img src={p3.src} alt="Engineer" className="w-full h-full object-cover" />
-            </div>
-            <div className="w-16 h-16 rounded-full bg-gray-700 flex justify-center items-center overflow-hidden">
-              <img src={p4.src} alt="Engineer" className="w-full h-full object-cover" />
-            </div>
-          </div>
-          <div className="mt-8">
-            <a href="#" className="bg-teal-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-teal-500 transition">
-              Get a Proposal
-            </a>
-          </div>
-          <div className="text-gray-400 mt-4">
-            <span>Clutch 4.9 ⭐⭐⭐⭐⭐</span>
+    <>
+      <div className="container mx-auto mt-14 flex flex-col min-h-screen w-screen items-center text-2xl leading-tight ">
+        <div className='text-center text-[100px] font-bold w-2/3'>
+          Digital product & brand agency
+        </div>
+        <div className='my-6 text-xl font-medium text-slate-800'>
+          We empower businesses to succeed in the digital space
+        </div>
+        <video
+          poster="https://www.datocms-assets.com/22695/1721808442-main-reel.jpg"
+          playsInline
+          preload="auto"
+          muted
+          autoPlay
+          className='rounded-xl'
+        >
+          <source src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/low.mp4" type="video/mp4" media="(max-width: 600px)" />
+          <source src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/medium.mp4" type="video/mp4" media="(min-width: 601px) and (max-width: 1023px)" />
+          <source src="https://www.datocms-assets.com/22695/1715091338-30fps.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className='flex justify-start mt-44 w-full'>
+          <div className='text-[50px] text-start font-bold w-1/3'>
+            For companies with
+            tech leverage
           </div>
         </div>
+        <div className='flex justify-between w-full my-8 text-xl text-slate-800'>
+          <div>All works <ArrowForwardIcon /> </div>
+          <div className='w-2/4 text-lg'>
+            We specialize in working with digital products and brands, regardless of the size and lifecycle stage, from startups to established businesses striving to achieve significant tech leverage.</div>
+        </div>
+        {/* 2 */}
+        <Logo />
+        {/* 3 */}
+        <div className='flex justify-start mt-44 w-full'>
+          <div className='text-[50px] text-start font-bold w-1/3'>
+            Proven by numbers
+          </div>
+        </div>
+        <div className='flex justify-between w-full my-32 text-xl text-slate-800'>
+          <div>All works <ArrowForwardIcon /> </div>
+          <div className='w-2/4 text-lg'>
+
+            Facts and figures confirm our expertise and contribution to the success of our partners. We always encourage to set clear, measurable goals and analyze data to achieve quantifiable results and make informed decisions.</div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
