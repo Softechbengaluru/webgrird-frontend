@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 const Navbar = () => {
   const [isServicesOpen, setServicesOpen] = useState(false);
-  const [isAboutOpen, setAboutOpen] = useState(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const servicesRef = useRef(null);
 
@@ -13,6 +12,10 @@ const Navbar = () => {
       setMobileMenuOpen(false);
       setServicesOpen(false);
     }
+  };
+
+  const toggleServices = () => {
+    setServicesOpen((prev) => !prev);
   };
 
 
@@ -79,31 +82,40 @@ const Navbar = () => {
           <Link href="/blog" className="text-gray-700 hover:text-black px-3 py-2 rounded">
             Blog
           </Link>
-          <Link href="/contact" className="bg-[#171a21] text-gray-300 hover:bg-[#242933] hover:text-[#49ffe6] px-3 py-2 rounded">
-            Contact
+        </div>
+        <div className='hidden md:flex'>
+          <Link href="/contact" className="relative text-lg font-bold overflow-hidden px-6 py-2 border border-black bg-white text-black rounded-lg transition-all duration-300 ease-in-out hover:text-white hover:bg-black">
+            <span className="absolute inset-0 transition-transform duration-300 transform -translate-x-full bg-black z-0 hover:translate-x-0"></span>
+            <span className="relative z-10">Contact</span>
           </Link>
         </div>
       </div>
-      {/* Mobile Menu */}
+
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white max-h-[80vh] overflow-y-auto mobile-menu">
           <div className="flex flex-col space-y-2 p-4">
-            <Link href="#contact" className="text-gray-600 hover:text-black px-3 py-2 rounded">Contact</Link>
+            <Link href="/work" className="text-gray-600 hover:text-black px-3 py-2 rounded">Work</Link>
             <div className="relative">
-              <button onClick={toggleAbout} className="text-black bg-white px-3 py-2 rounded flex justify-between w-full">
-                About
-                <span>{isAboutOpen ? '-' : '+'}</span>
+              <button onClick={toggleServices} className="text-black bg-white px-3 py-2 rounded flex justify-between w-full">
+                Capabilities
+                <span>{isServicesOpen ? '-' : '+'}</span>
               </button>
-              {isAboutOpen && (
-                <div className="bg-black w-full rounded mt-1">
-                  <a href="#team" className="block text-gray-600 hover:text-black px-4 py-2">Our Team</a>
-                  <a href="#mission" className="block text-gray-600 hover:text-black px-4 py-2">Our Mission</a>
-                  <a href="#vision" className="block text-gray-600 hover:text-black px-4 py-2">Our Vision</a>
-                  <a href="#history" className="block text-gray-600 hover:text-black px-4 py-2">Our History</a>
+              {isServicesOpen && (
+                <div className="bg-wheat w-full rounded mt-1">
+                  <Link href="#service1" className="block text-black px-4 py-2">Web development</Link>
+                  <Link href="#service2" className="block text-black px-4 py-2">Mobile app development</Link>
+                  <Link href="#service3" className="block text-black px-4 py-2">UI/UX development</Link>
+                  <Link href="#service4" className="block text-black px-4 py-2">Desktop app development</Link>
+                  <Link href="#service5" className="block text-black px-4 py-2">Digital product development</Link>
                 </div>
               )}
             </div>
-            <Link href="#contact" className="text-gray-600 hover:text-black px-3 py-2 rounded">Contact</Link>
+            <Link href="/about" className="text-gray-600 hover:text-black px-3 py-2 rounded">About</Link>
+            <Link href="/blog" className="text-gray-600 hover:text-black px-3 py-2 rounded">Blog</Link>
+            <Link href="/contact" className="relative text-lg font-bold overflow-hidden px-6 py-2 border border-black bg-white text-black rounded-lg transition-all duration-300 ease-in-out hover:text-white hover:bg-black">
+              <span className="absolute inset-0 transition-transform duration-300 transform -translate-x-full bg-black z-0 hover:translate-x-0"></span>
+              <span className="relative z-10">Contact</span>
+            </Link>
           </div>
         </div>
       )}
@@ -112,4 +124,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
