@@ -137,12 +137,11 @@ const Logo = () => {
                                     width={202}
                                     height={108}
                                     alt=""
-                                    className="mx-auto"
-                                    priority // Use for critical images
+                                    className="mx-auto xl:w-full xl:h-full"
+                                    priority
                                 />
                             </div>
                             <div className="description">
-                                {/* You can add a description here if needed */}
                             </div>
                         </a>
                     </div>

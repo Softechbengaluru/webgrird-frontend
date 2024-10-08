@@ -57,20 +57,14 @@ const TestimonialCarousel = () => {
     };
 
     return (
-        <div className="flex justify-center items-center">
-            <div className="max-w-2xl p-4 bg-white rounded-lg">
-                <div className="flex justify-between items-center">
-                    <div className="text-center text-black">
+        <div className="flex xl:w-full justify-center xl:items-center">
+            <div className="xl:max-w-2xl p-4 bg-white rounded-lg">
+                <div className="flex lg:w-[90%] xl:w-auto justify-between items-center">
+                    <div className="text-center w-full lg:w-[90%] xl:w-full  text-black">
                         <div className='w-full flex justify-between items-center'>
-                            <Image
-                                width={20}
-                                height={20}
-                                src={testimonials[currentIndex].companyLogo}
-                                alt="Company Logo"
-                                className="h-16 w-28  mb-4 "
-                            />
-                            <div className='flex'>
-                                <button onClick={handlePrev} className="text-gray-600 flex items-center hover:text-black">
+                            <div></div>
+                            <div className='flex mb-10'>
+                                <button onClick={handlePrev} className="text-gray-600 flex items-center  hover:text-black">
                                     <ArrowBackIcon />
                                 </button>
                                 <div className="text-center mx-4 text-xl ">
@@ -84,15 +78,15 @@ const TestimonialCarousel = () => {
                         <p className=" mb-6 h-32 text-left">
                             "{testimonials[currentIndex].text}"
                         </p>
-                        <div className="flex justify-start items-center">
+                        <div className="flex justify-start  xl:my-14 items-center">
                             <Image
                                 width={40}
                                 height={40}
                                 src={testimonials[currentIndex].image}
                                 alt={testimonials[currentIndex].author}
-                                className="size-20 object-fill rounded-full mr-4"
+                                className="xl:size-20 lg:size-16 object-fill rounded-full mr-4"
                             />
-                            <div className='text-xl'>
+                            <div className='text-xl text-left'>
                                 <h3 className="font-bold ">{testimonials[currentIndex].author}</h3>
                                 <p className="">{testimonials[currentIndex].title}</p>
                             </div>
