@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className="w-full">
-          {/* <Navbar /> */}
+          {/* <Navbar /> the navbar is not responisve so i commented it  */}
           <div className="mt-20 w-full">
             {children}
             <Footer />
