@@ -57,44 +57,38 @@ const TestimonialCarousel = () => {
     };
 
     return (
-        <div className="flex xl:w-full justify-center xl:items-center">
-            <div className="xl:max-w-2xl p-4 bg-white rounded-lg">
-                <div className="flex lg:w-[90%] xl:w-auto justify-between items-center">
-                    <div className="text-center w-full lg:w-[90%] xl:w-full  text-black">
-                        <div className='w-full flex justify-between items-center'>
-                            <div></div>
-                            <div className='flex mb-10'>
-                                <button onClick={handlePrev} className="text-gray-600 flex items-center  hover:text-black">
-                                    <ArrowBackIcon />
-                                </button>
-                                <div className="text-center mx-4 text-xl ">
-                                    {currentIndex + 1} / {testimonials.length}
-                                </div>
-                                <button onClick={handleNext} className="text-gray-600 flex items-center hover:text-black">
-                                    <ArrowForwardIcon />
-                                </button>
-                            </div>
-                        </div>
-                        <p className=" mb-6 h-32 text-left">
-                            "{testimonials[currentIndex].text}"
-                        </p>
-                        <div className="flex justify-start  xl:my-14 items-center">
-                            <Image
-                                width={40}
-                                height={40}
-                                src={testimonials[currentIndex].image}
-                                alt={testimonials[currentIndex].author}
-                                className="xl:size-20 lg:size-16 object-fill rounded-full mr-4"
-                            />
-                            <div className='text-xl text-left'>
-                                <h3 className="font-bold ">{testimonials[currentIndex].author}</h3>
-                                <p className="">{testimonials[currentIndex].title}</p>
-                            </div>
-                        </div>
+        <div className="flex justify-center  items-center w-full xl:max-w-2xl p-4 bg-white rounded-lg">
+            <div className="w-full text-center text-black">
+                <div className="flex md:justify-end  items-center mb-10">
+                    <button onClick={handlePrev} className="text-gray-600 hover:text-black">
+                        <ArrowBackIcon />
+                    </button>
+                    <div className="mx-4 md:text-base lg:text-xl">
+                        {currentIndex + 1} / {testimonials.length}
+                    </div>
+                    <button onClick={handleNext} className="text-gray-600 hover:text-black">
+                        <ArrowForwardIcon />
+                    </button>
+                </div>
+                <p className="mb-6 h-32 lg:text-xl md:text-base text-left">
+                    "{testimonials[currentIndex].text}"
+                </p>
+                <div className="flex my-32 sm:my-0 items-center">
+                    <Image
+                        width={40}
+                        height={40}
+                        src={testimonials[currentIndex].image}
+                        alt={testimonials[currentIndex].author}
+                        className="rounded-full mr-4 md:w-10 md:h-10 lg:w-16 lg:h-16 object-cover"
+                    />
+                    <div className="text-left lg:text-xl md:text-sm">
+                        <h3 className="font-bold text-xl">{testimonials[currentIndex].author}</h3>
+                        <p>{testimonials[currentIndex].title}</p>
                     </div>
                 </div>
             </div>
         </div>
+
     );
 };
 

@@ -129,7 +129,7 @@ const Logo = () => {
         <div className="flex-wrap justify-center grid grid-cols-5">
             {logosData.map((item, index) => (
                 index <= 14 && (
-                    <div key={index} className="item animated m-4 max-w-xs">
+                    <div key={index} className="item animated  lg:m-4 max-w-xs">
                         <a href={item.link || '#'} className="block text-center" aria-label="Partner Logo">
                             <div className="logo mb-2">
                                 <Image
@@ -137,7 +137,7 @@ const Logo = () => {
                                     width={202}
                                     height={108}
                                     alt=""
-                                    className="mx-auto xl:w-full xl:h-full"
+                                    className="mx-auto lg:w-full md:size-24 xl:w-full xl:h-full"
                                     priority
                                 />
                             </div>
