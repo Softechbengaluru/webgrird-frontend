@@ -10,9 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+   
       <body>
         <div className="w-full">
-          {/* <Navbar /> the navbar is not responisve so i commented it  */}
+          <Navbar />
           <div className="mt-20 w-full">
             {children}
             <Footer />
