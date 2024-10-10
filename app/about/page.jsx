@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link';
 import React, { useState, useRef, useEffect } from 'react';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const items = [
     {
@@ -299,14 +300,18 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="flex justify-center mt-6">
-                <Link href="/contact" className="relative text-lg font-bold overflow-hidden px-6 py-2 border border-black bg-white text-black rounded-lg transition-all duration-300 ease-in-out hover:text-white hover:bg-black"
+            <div className='flex justify-center mt-16 sm:mt-28 mb-20 sm:mb-44'>
+                <Link href="/contact"
                     onMouseEnter={() => setHovered(true)}
-                    onMouseLeave={() => setHovered(false)}>
-                    <span className="absolute inset-0 transition-transform duration-300 transform -translate-x-full bg-black z-0 hover:translate-x-0"></span>
-                    <span className="relative z-10">{hovered ? "Let's get together" : 'Shall We Talk?'}</span>
+                    onMouseLeave={() => setHovered(false)}
+                    type="submit"
+                    className="flex px-6 sm:px-11 sm:py-5 2xl:px-28 lg:px-20 lg:h-20 2xl:text-3xl xl:text-2xl xl:h-20 xl:px-20 2xl:h-24 justify-center gap-2 items-center mx-auto shadow-xl font-normal bg-[#262626] backdrop-blur-md text-white isolation-auto border-[#262626] before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-white hover:text-[#262626] before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 py-2 overflow-hidden border-2 rounded-full group"
+                >
+                    {hovered ? "Let's get together" : 'Shall We Talk?'}
+                    <ArrowForwardIcon />
                 </Link>
             </div>
+
         </>
     )
 }

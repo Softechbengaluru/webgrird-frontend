@@ -8,7 +8,7 @@ const Navbar = () => {
   const servicesRef = useRef(null);
 
   const handleClickOutside = (event) => {
-    if (!event.target.closest('.mobile-menu')) {
+    if (!event.target.closest('.mobile-menu') && !servicesRef.current.contains(event.target)) {
       setMobileMenuOpen(false);
       setServicesOpen(false);
     }
@@ -18,7 +18,6 @@ const Navbar = () => {
     setServicesOpen((prev) => !prev);
   };
 
-
   useEffect(() => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
@@ -26,19 +25,21 @@ const Navbar = () => {
     };
   }, []);
 
-  const setServiceTab = () => {
-    setServicesOpen(true)
-  }
-
-  const navTabClose = () => {
-    setServicesOpen(false)
-  }
+  const handleLinkClick = () => {
+    setServicesOpen(false);
+    if (isMobileMenuOpen) {
+      setMobileMenuOpen(false);
+    }
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white p-4 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-black text-lg font-bold">
-          <Link href="/">WebGrid</Link></div>
+          <Link href="/">
+            <img src="/images/logo.jpeg" height={200} width={200} alt="Logo" />
+          </Link>
+        </div>
         <div className="md:hidden">
           <button
             onClick={() => setMobileMenuOpen((prev) => !prev)}
@@ -55,24 +56,32 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className={`hidden md:flex space-x-4 relative h-12`}>
+        <div className={`hidden md:flex space-x-4 relative h-12`} ref={servicesRef}>
           <Link href="/work" className="text-gray-700 hover:text-black px-3 py-2 rounded">
             Work
           </Link>
-          <div className="group relative" ref={servicesRef} onMouseLeave={() => navTabClose()}>
+          <div className="group relative" onMouseLeave={() => setServicesOpen(false)}>
             <button
-              onMouseEnter={() => setServiceTab()}
+              onMouseEnter={() => setServicesOpen(true)}
               className="text-black hover:text-[#49ffe6] px-3 py-2 rounded"
             >
-              Capablities
+              Capabilities
+              <span className="ml-2" style={{ fontSize: "10px" }}>
+                {isServicesOpen ? "▲" : "▼"}
+              </span>
             </button>
             {isServicesOpen && (
-              <div className="absolute left-0 text-black bg-wheat w-48 rounded mt-1 shadow-lg">
-                <a href="#service1" className="block text-gray-600 hover:text-black px-4 py-2">Web development</a>
-                <a href="#service2" className="block text-gray-600 hover:text-black px-4 py-2">Mobile app development</a>
-                <a href="#service3" className="block text-gray-600 hover:text-black px-4 py-2">UI/UI Development</a>
-                <a href="#service4" className="block text-gray-600 hover:text-black px-4 py-2">Desktop app development</a>
-                <a href="#service5" className="block text-gray-600 hover:text-black px-4 py-2">Digital product development</a>
+              <div className="absolute left-0 text-black bg-white w-48 rounded mt-1 shadow-lg">
+                {['Web development', 'Mobile app development', 'UI/UX Development', 'Desktop app development', 'Digital product development'].map((service, index) => (
+                  <Link 
+                    key={index} 
+                    href={`#service${index + 1}`} 
+                    onClick={handleLinkClick} 
+                    className="block text-gray-600 hover:text-black px-4 py-2"
+                  >
+                    {service}
+                  </Link>
+                ))}
               </div>
             )}
           </div>
@@ -98,15 +107,20 @@ const Navbar = () => {
             <div className="relative">
               <button onClick={toggleServices} className="text-black bg-white px-3 py-2 rounded flex justify-between w-full">
                 Capabilities
-                <span>{isServicesOpen ? '-' : '+'}</span>
+                <span>{isServicesOpen ? "▲" : "▼"}</span>
               </button>
               {isServicesOpen && (
                 <div className="bg-wheat w-full rounded mt-1">
-                  <Link href="#service1" className="block text-black px-4 py-2">Web development</Link>
-                  <Link href="#service2" className="block text-black px-4 py-2">Mobile app development</Link>
-                  <Link href="#service3" className="block text-black px-4 py-2">UI/UX development</Link>
-                  <Link href="#service4" className="block text-black px-4 py-2">Desktop app development</Link>
-                  <Link href="#service5" className="block text-black px-4 py-2">Digital product development</Link>
+                  {['Web development', 'Mobile app development', 'UI/UX Development', 'Desktop app development', 'Digital product development'].map((service, index) => (
+                    <Link 
+                      key={index} 
+                      href={`#service${index + 1}`} 
+                      onClick={handleLinkClick} 
+                      className="block text-black px-4 py-2"
+                    >
+                      {service}
+                    </Link>
+                  ))}
                 </div>
               )}
             </div>
