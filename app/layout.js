@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <div className="w-full">
           <Navbar />
-          <div className=" w-full overflow-x-hidden">
+          <div className="mt-32 w-full overflow-x-hidden">
             {children}
             <Footer />
           </div>
