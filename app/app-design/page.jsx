@@ -37,8 +37,8 @@ const page = () => {
 
   return (
     <>
-      <div className="bg-black h-[400px] md:mt-20 md:pt-0 pt-10">
-        <div className="text-center flex justify-center pt-20 pb-6">
+      <div className="bg-black h-[400px] md:pt-0 pt-10">
+        <div className="text-center flex justify-center pt-24 pb-6">
           <h1 className="text-white text-5xl md:text-6xl font-bold">
             App design
           </h1>
