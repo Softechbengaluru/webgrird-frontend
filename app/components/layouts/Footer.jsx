@@ -20,7 +20,7 @@ const Footer = () => {
 
       <div className="container grid grid-cols-1 md:grid-cols-4 gap-8 mt-16">
         <div>
-          <h3 className="text-3xl font-semibold">WebGrid</h3>
+        <img src="/images/logo.jpeg" height={150} width={150} alt="Logo" />
           <p className="text-xl mt-2">Since 2015, we’ve helped 80+ fast-growing companies in over 20 different industries build web, mobile and desktop apps that make an impact.</p>
         </div>
 
