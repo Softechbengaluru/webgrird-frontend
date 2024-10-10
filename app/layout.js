@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <div className="w-full">
           <Navbar />
-          <div className="mt-20 w-full">
+          <div className="mt-24 w-full">
             {children}
             <Footer />
           </div>
