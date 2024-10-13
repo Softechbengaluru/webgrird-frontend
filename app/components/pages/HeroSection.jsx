@@ -19,7 +19,7 @@ export default function Hero() {
           preload="auto"
           muted
           autoPlay
-          className='rounded-xl w-full sm:w-auto'
+          className='rounded-xl sm:w-full w-[98%] '
         >
           <source src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/low.mp4" type="video/mp4" media="(max-width: 600px)" />
           <source src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/medium.mp4" type="video/mp4" media="(min-width: 601px) and (max-width: 1023px)" />
