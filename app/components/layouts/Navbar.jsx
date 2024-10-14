@@ -1,15 +1,25 @@
-'use client';
-import React, { useState, useRef, useEffect } from 'react';
-import Link from 'next/link';
+"use client";
+import React, { useState, useRef, useEffect } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isServicesOpen, setServicesOpen] = useState(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const servicesRef = useRef(null);
+  const services = [
+    { name: "Web development", path: "web-design" },
+    { name: "Mobile app development", path: "app-design" },
+    { name: "UI/UX Development", path: "ui-ux-design" },
+    { name: "Desktop app development", path: "desktop-app-development" },
+    {
+      name: "Digital product development",
+      path: "/ui-ux/digital-product-development",
+    },
+  ];
 
   const handleClickOutside = (event) => {
     if (
-      !event.target.closest('.mobile-menu') &&
+      !event.target.closest(".mobile-menu") &&
       !servicesRef.current.contains(event.target)
     ) {
       setMobileMenuOpen(false);
@@ -22,9 +32,9 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -83,26 +93,19 @@ const Navbar = () => {
               className="text-black hover:text-[#49ffe6] px-3 py-2 rounded"
             >
               Capabilities
-              <span className="ml-2" style={{ fontSize: '10px' }}>
-                {isServicesOpen ? '▲' : '▼'}
+              <span className="ml-2" style={{ fontSize: "10px" }}>
+                {isServicesOpen ? "▲" : "▼"}
               </span>
             </button>
             {isServicesOpen && (
               <div className="absolute left-0 text-black bg-white w-48 rounded mt-1 shadow-lg">
-                {[
-                  'Web development',
-                  'Mobile app development',
-                  'UI/UX Development',
-                  'Desktop app development',
-                  'Digital product development',
-                ].map((service, index) => (
+                {services.map((service, index) => (
                   <Link
                     key={index}
-                    href={`#service${index + 1}`}
-                    onClick={handleLinkClick}
+                    href={service.path}
                     className="block text-gray-600 hover:text-black px-4 py-2"
                   >
-                    {service}
+                    {service.name}
                   </Link>
                 ))}
               </div>
@@ -147,16 +150,16 @@ const Navbar = () => {
                 className="text-black bg-white px-3 py-2 rounded flex justify-between w-full"
               >
                 Capabilities
-                <span>{isServicesOpen ? '▲' : '▼'}</span>
+                <span>{isServicesOpen ? "▲" : "▼"}</span>
               </button>
               {isServicesOpen && (
                 <div className="bg-wheat w-full rounded mt-1">
                   {[
-                    'Web development',
-                    'Mobile app development',
-                    'UI/UX Development',
-                    'Desktop app development',
-                    'Digital product development',
+                    "Web development",
+                    "Mobile app development",
+                    "UI/UX Development",
+                    "Desktop app development",
+                    "Digital product development",
                   ].map((service, index) => (
                     <Link
                       key={index}
