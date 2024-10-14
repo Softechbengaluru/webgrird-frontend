@@ -156,14 +156,20 @@ const Navbar = () => {
               </button>
               {isServicesOpen && (
                 <div className="bg-wheat w-full rounded mt-1">
-                  {services.map((service, index) => (
+                  {[
+                    "Web development",
+                    "Mobile app development",
+                    "UI/UX Development",
+                    "Desktop app development",
+                    "Digital product development",
+                  ].map((service, index) => (
                     <Link
                       key={index}
                       href={`#service${index + 1}`}
                       onClick={handleLinkClick}
                       className="block text-black px-4 py-2"
                     >
-                      {service.name}
+                      {service}
                     </Link>
                   ))}
                 </div>
