@@ -104,6 +104,7 @@ const Navbar = () => {
                     key={index}
                     href={service.path}
                     className="block text-gray-600 hover:text-black px-4 py-2"
+                    onClick={handleLinkClick}
                   >
                     {service.name}
                   </Link>
@@ -141,6 +142,7 @@ const Navbar = () => {
             <Link
               href="/work"
               className="text-gray-600 hover:text-black px-3 py-2 rounded"
+              onClick={handleLinkClick}
             >
               Work
             </Link>
@@ -154,20 +156,14 @@ const Navbar = () => {
               </button>
               {isServicesOpen && (
                 <div className="bg-wheat w-full rounded mt-1">
-                  {[
-                    "Web development",
-                    "Mobile app development",
-                    "UI/UX Development",
-                    "Desktop app development",
-                    "Digital product development",
-                  ].map((service, index) => (
+                  {services.map((service, index) => (
                     <Link
                       key={index}
                       href={`#service${index + 1}`}
                       onClick={handleLinkClick}
                       className="block text-black px-4 py-2"
                     >
-                      {service}
+                      {service.name}
                     </Link>
                   ))}
                 </div>
@@ -176,18 +172,21 @@ const Navbar = () => {
             <Link
               href="/about"
               className="text-gray-600 hover:text-black px-3 py-2 rounded"
+              onClick={handleLinkClick}
             >
               About
             </Link>
             <Link
               href="/blog"
               className="text-gray-600 hover:text-black px-3 py-2 rounded"
+              onClick={handleLinkClick}
             >
               Blog
             </Link>
             <Link
               href="/contact"
               className="relative text-lg font-bold overflow-hidden px-6 py-2 border border-black bg-white text-black rounded-lg transition-all duration-300 ease-in-out hover:text-white hover:bg-black"
+              onClick={handleLinkClick}
             >
               <span className="absolute inset-0 transition-transform duration-300 transform -translate-x-full bg-black z-0 hover:translate-x-0"></span>
               <span className="relative z-10">Contact</span>
