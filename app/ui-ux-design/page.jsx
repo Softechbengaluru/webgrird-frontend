@@ -57,9 +57,7 @@ const page = () => {
             </div>
           </div>
           <div className="flex justify-between w-full mt-4 text-lg text-slate-800">
-            <Link className="w-28 sm:w-36" href="/work">
-              {/* All works <ArrowForwardIcon /> */}
-            </Link>
+            <Link className="w-28 sm:w-36" href="/work"></Link>
             <div className="w-full sm:w-2/4 text-lg">
               We specialize in working with digital products and brands,
               regardless of the size and lifecycle stage, from startups to
@@ -68,12 +66,11 @@ const page = () => {
             </div>
           </div>
         </section>
-        {/* case studies section */}
+
         <section className="lg:h-[740px] h-fit bg-black text-white md:py-20 py-10 px-4">
           <div className="mx-auto max-w-7xl">
             <h2 className="font-bold md:text-4xl text-[26px]">Case studies</h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-14 gap-10 py-14">
-              {/* video */}
               <div
                 onMouseEnter={(e) =>
                   e.currentTarget.querySelector('video').play()
@@ -83,25 +80,12 @@ const page = () => {
                 }
               >
                 <video
-                  poster="https://www.datocms-assets.com/22695/1721808442-main-reel.jpg"
                   playsInline
-                  //   preload="auto"
                   muted
-                  //   autoPlay
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
                   <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/low.mp4"
-                    type="video/mp4"
-                    media="(max-width: 600px)"
-                  />
-                  <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/medium.mp4"
-                    type="video/mp4"
-                    media="(min-width: 601px) and (max-width: 1023px)"
-                  />
-                  <source
-                    src="https://www.datocms-assets.com/22695/1715091338-30fps.mp4"
+                    src="https://www.datocms-assets.com/22695/1688546078-salesforce_work_teaser.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -114,7 +98,7 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              {/* video */}
+
               <div
                 onMouseEnter={(e) =>
                   e.currentTarget.querySelector('video').play()
@@ -124,25 +108,12 @@ const page = () => {
                 }
               >
                 <video
-                  poster="https://www.datocms-assets.com/22695/1721808442-main-reel.jpg"
                   playsInline
-                  //   preload="auto"
                   muted
-                  //   autoPlay
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
                   <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/low.mp4"
-                    type="video/mp4"
-                    media="(max-width: 600px)"
-                  />
-                  <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/medium.mp4"
-                    type="video/mp4"
-                    media="(min-width: 601px) and (max-width: 1023px)"
-                  />
-                  <source
-                    src="https://www.datocms-assets.com/22695/1715091338-30fps.mp4"
+                    src="https://www.datocms-assets.com/22695/1688546285-turo_work_teaser.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -155,7 +126,7 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              {/* video */}
+
               <div
                 onMouseEnter={(e) =>
                   e.currentTarget.querySelector('video').play()
@@ -165,25 +136,12 @@ const page = () => {
                 }
               >
                 <video
-                  poster="https://www.datocms-assets.com/22695/1721808442-main-reel.jpg"
                   playsInline
-                  //   preload="auto"
                   muted
-                  //   autoPlay
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
                   <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/low.mp4"
-                    type="video/mp4"
-                    media="(max-width: 600px)"
-                  />
-                  <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/medium.mp4"
-                    type="video/mp4"
-                    media="(min-width: 601px) and (max-width: 1023px)"
-                  />
-                  <source
-                    src="https://www.datocms-assets.com/22695/1715091338-30fps.mp4"
+                    src="https://www.datocms-assets.com/22695/1688546472-tile_work_teaser.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -199,7 +157,7 @@ const page = () => {
             </div>
           </div>
         </section>
-        {/* Services section */}
+
         <section className="py-20 max-w-7xl mx-auto">
           <h2 className="font-bold md:text-[40px] text-3xl px-10 text-center">
             Capabilities in UI/UX design services
@@ -235,7 +193,7 @@ const page = () => {
             <div></div>
           </div>
         </section>
-        {/* Additional services section */}
+
         <section className="max-w-7xl mx-auto md:py-20 py-16">
           <h2 className="font-bold md:text-[40px] text-4xl text-center">
             Additional services
@@ -311,48 +269,49 @@ const page = () => {
             </div>
           </div>
         </section>
-        {/* Why section */}
+
         <section className="max-w-5xl mx-auto">
           <div>
-            <h4 className="font-bold text-5xl text-center">Why Webgrid?</h4>
+            <h4 className="font-bold text-5xl text-center">Why WebGrid?</h4>
             <p className="text-center py-8 text-lg">
-              At Ramotion, we combine innovative design with practical
-              functionality, ensuring each project is not only aesthetically
-              pleasing but also user-centric and effective. Our experienced team
-              excels in transforming your vision into a digital reality,
-              prioritizing your brand identity and audience engagement. With a
-              track record of delivering bespoke, high-quality web solutions, we
-              tailor our services to meet your unique needs and goals
+              At WebGrid, we blend innovative web design with practical
+              functionality, ensuring each project is visually appealing and
+              user-centric. Our experienced team excels at transforming your
+              vision into a digital reality, prioritizing your brand identity
+              and audience engagement. With a proven track record of delivering
+              bespoke, high-quality web solutions, we customize our services to
+              align with your unique needs and goals.
             </p>
           </div>
           <div className=" flex md:flex-row flex-col gap-8 justify-center mt-20 px-20">
             <div className="w-full border-b border-black/20 pb-8">
               <p className="text-lg sm:text-2xl font-semibold">
-                Made in exits by our startup clients
+                Made in Exits by Our Startup Clients
               </p>
               <div className="py-6">
-                <strong className="text-4xl sm:text-7xl">$3.5B</strong>
+                <strong className="text-4xl sm:text-7xl">$50</strong>
               </div>
               <p className="text-base sm:text-lg">
-                Every once in a while, startups we parntered with successfully
-                get acquired.
+                Periodically, startups we partner with achieve successful
+                acquisitions.
               </p>
             </div>
             <div className="w-full border-b border-black/20 pb-8">
               <p className="text-lg sm:text-2xl font-semibold">
-                Raised by our startup clients
+                Raised by Our Startup Clients
               </p>
               <div className="py-6">
-                <strong className="text-4xl sm:text-7xl">$750M+</strong>
+                <strong className="text-4xl sm:text-7xl">$120+</strong>
               </div>
               <p className="text-base sm:text-lg">
-                We work with lots of growing early stage startups to help them
-                design visual identities, websites, and products.
+                We collaborate with numerous growing early-stage startups to
+                help them create compelling visual identities, websites, and
+                products.
               </p>
             </div>
           </div>
         </section>
-        {/* Awards & Recognitions section */}
+
         <section className="max-w-7xl w-full mx-auto md:py-20 py-10 px-4">
           <div className="flex justify-start w-full">
             <div className="text-3xl sm:text-[40px] font-bold text-center w-full">
@@ -390,7 +349,7 @@ const page = () => {
             ))}
           </div>
         </section>
-        {/* Clients section */}
+
         <section className="max-w-7xl w-full mx-auto py-10 md:py-20 px-4">
           <div className="flex justify-start w-full">
             <div className="text-3xl sm:text-[40px] font-bold sm:w-[50%] w-full">
@@ -407,7 +366,7 @@ const page = () => {
             </div>
           </div>
         </section>
-        {/* comapnies section */}
+
         <section className="max-w-7xl w-full mx-auto">
           <Logo />
         </section>

@@ -1,34 +1,34 @@
-"use client";
-import Link from "next/link";
-import React, { useState } from "react";
-import TestimonialCarousel from "../components/pages/testimonial";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import Logo from "../components/pages/logo";
-import Faq from "../components/Faq";
+'use client';
+import Link from 'next/link';
+import React, { useState } from 'react';
+import TestimonialCarousel from '../components/pages/testimonial';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Logo from '../components/pages/logo';
+import Faq from '../components/Faq';
 
 const logosData = [
   {
-    logo: "https://www.datocms-assets.com/22695/1715843667-netflix-c.svg",
-    description: "Series of visual concepts for improving the user experience",
+    logo: 'https://www.datocms-assets.com/22695/1715843667-netflix-c.svg',
+    description: 'Series of visual concepts for improving the user experience',
   },
   {
-    logo: "https://www.datocms-assets.com/22695/1715859094-cbre-c.svg",
+    logo: 'https://www.datocms-assets.com/22695/1715859094-cbre-c.svg',
     description:
       "Marketing website for a subsidiary of the CBRE Group's co-working space company",
   },
   {
-    logo: "https://www.datocms-assets.com/22695/1715843686-stripe-c.svg",
+    logo: 'https://www.datocms-assets.com/22695/1715843686-stripe-c.svg',
     description:
-      "Iconography design for a payments infrastructure company with 250M+ API requests per day",
+      'Iconography design for a payments infrastructure company with 250M+ API requests per day',
   },
   {
-    logo: "https://www.datocms-assets.com/22695/1715859145-nbc-c.svg",
-    description: "Official Apple tvOS app user interface development",
+    logo: 'https://www.datocms-assets.com/22695/1715859145-nbc-c.svg',
+    description: 'Official Apple tvOS app user interface development',
   },
   {
-    logo: "https://www.datocms-assets.com/22695/1715843699-mozilla-c.svg",
+    logo: 'https://www.datocms-assets.com/22695/1715843699-mozilla-c.svg',
     description:
-      "Official Firefox rebrand and ongoing support for design projects at Mozilla",
+      'Official Firefox rebrand and ongoing support for design projects at Mozilla',
   },
 ];
 
@@ -50,30 +50,6 @@ const page = () => {
         </div>
       </div>
       <div className=" flex flex-col min-h-screen w-full item text-xl leading-tight">
-        {/* <video
-          poster="https://www.datocms-assets.com/22695/1721808442-main-reel.jpg"
-          playsInline
-          preload="auto"
-          muted
-          autoPlay
-          className="rounded-xl w-full sm:w-auto"
-        >
-          <source
-            src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/low.mp4"
-            type="video/mp4"
-            media="(max-width: 600px)"
-          />
-          <source
-            src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/medium.mp4"
-            type="video/mp4"
-            media="(min-width: 601px) and (max-width: 1023px)"
-          />
-          <source
-            src="https://www.datocms-assets.com/22695/1715091338-30fps.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video> */}
         <section className="mx-auto max-w-7xl md:px-0 px-4 py-20">
           <div className="flex justify-start md:mt-10 w-full">
             <div className="text-[33px] sm:text-[40px] font-bold sm:w-[50%] w-full">
@@ -81,9 +57,7 @@ const page = () => {
             </div>
           </div>
           <div className="flex justify-between w-full mt-4 text-lg text-slate-800">
-            <Link className="w-28 sm:w-36" href="/work">
-              {/* All works <ArrowForwardIcon /> */}
-            </Link>
+            <Link className="w-28 sm:w-36" href="/work"></Link>
             <div className="w-full sm:w-2/4 text-lg">
               We specialize in working with digital products and brands,
               regardless of the size and lifecycle stage, from startups to
@@ -92,40 +66,26 @@ const page = () => {
             </div>
           </div>
         </section>
-        {/* case studies section */}
+
         <section className="lg:h-[740px] h-fit bg-black text-white md:py-20 py-10 px-4">
           <div className="mx-auto max-w-7xl">
             <h2 className="font-bold md:text-4xl text-[26px]">Case studies</h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-14 gap-10 py-14">
-              {/* video */}
               <div
                 onMouseEnter={(e) =>
-                  e.currentTarget.querySelector("video").play()
+                  e.currentTarget.querySelector('video').play()
                 }
                 onMouseLeave={(e) =>
-                  e.currentTarget.querySelector("video").pause()
+                  e.currentTarget.querySelector('video').pause()
                 }
               >
                 <video
-                  poster="https://www.datocms-assets.com/22695/1721808442-main-reel.jpg"
                   playsInline
-                  //   preload="auto"
                   muted
-                  //   autoPlay
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
                   <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/low.mp4"
-                    type="video/mp4"
-                    media="(max-width: 600px)"
-                  />
-                  <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/medium.mp4"
-                    type="video/mp4"
-                    media="(min-width: 601px) and (max-width: 1023px)"
-                  />
-                  <source
-                    src="https://www.datocms-assets.com/22695/1715091338-30fps.mp4"
+                    src="https://www.datocms-assets.com/22695/1688546078-salesforce_work_teaser.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -138,35 +98,22 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              {/* video */}
+
               <div
                 onMouseEnter={(e) =>
-                  e.currentTarget.querySelector("video").play()
+                  e.currentTarget.querySelector('video').play()
                 }
                 onMouseLeave={(e) =>
-                  e.currentTarget.querySelector("video").pause()
+                  e.currentTarget.querySelector('video').pause()
                 }
               >
                 <video
-                  poster="https://www.datocms-assets.com/22695/1721808442-main-reel.jpg"
                   playsInline
-                  //   preload="auto"
                   muted
-                  //   autoPlay
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
                   <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/low.mp4"
-                    type="video/mp4"
-                    media="(max-width: 600px)"
-                  />
-                  <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/medium.mp4"
-                    type="video/mp4"
-                    media="(min-width: 601px) and (max-width: 1023px)"
-                  />
-                  <source
-                    src="https://www.datocms-assets.com/22695/1715091338-30fps.mp4"
+                    src="https://www.datocms-assets.com/22695/1688546285-turo_work_teaser.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -179,35 +126,22 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              {/* video */}
+
               <div
                 onMouseEnter={(e) =>
-                  e.currentTarget.querySelector("video").play()
+                  e.currentTarget.querySelector('video').play()
                 }
                 onMouseLeave={(e) =>
-                  e.currentTarget.querySelector("video").pause()
+                  e.currentTarget.querySelector('video').pause()
                 }
               >
                 <video
-                  poster="https://www.datocms-assets.com/22695/1721808442-main-reel.jpg"
                   playsInline
-                  //   preload="auto"
                   muted
-                  //   autoPlay
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
                   <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/low.mp4"
-                    type="video/mp4"
-                    media="(max-width: 600px)"
-                  />
-                  <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/medium.mp4"
-                    type="video/mp4"
-                    media="(min-width: 601px) and (max-width: 1023px)"
-                  />
-                  <source
-                    src="https://www.datocms-assets.com/22695/1715091338-30fps.mp4"
+                    src="https://www.datocms-assets.com/22695/1688546472-tile_work_teaser.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -223,13 +157,13 @@ const page = () => {
             </div>
           </div>
         </section>
-        {/* Services section */}
+
         <section className="py-20 max-w-7xl mx-auto">
           <h2 className="font-bold md:text-[40px] text-3xl px-10 text-center">
             Capabilities in web and mobile app design services
           </h2>
           <p className="py-4 text-center max-w-5xl md:px-10 px-2 text-lg mx-auto">
-            From{" "}
+            From{' '}
             <a href="#" className="underline">
               competitive analysis to interactive prototypes
             </a>
@@ -262,7 +196,7 @@ const page = () => {
             <div></div>
           </div>
         </section>
-        {/* Additional services section */}
+
         <section className="max-w-7xl mx-auto md:py-20 py-16">
           <h2 className="font-bold md:text-[40px] text-4xl text-center">
             Additional services
@@ -304,10 +238,10 @@ const page = () => {
                 Web app development
               </h4>
               <p className="text-lg">
-                Leverage our strategic{" "}
+                Leverage our strategic{' '}
                 <a href="#" className="underline">
                   web app development
-                </a>{" "}
+                </a>{' '}
                 to create powerful and intuitive online experiences.
               </p>
             </div>
@@ -316,7 +250,7 @@ const page = () => {
                 Design system
               </h4>
               <p className="text-lg">
-                Create robust{" "}
+                Create robust{' '}
                 <a href="#" className="underline">
                   design system to unify teams
                 </a>
@@ -329,7 +263,7 @@ const page = () => {
               </h4>
               <p className="text-lg">
                 Boost your startup's digital reach with our team's expertise in
-                delivering custom{" "}
+                delivering custom{' '}
                 <a href="#" className="underline">
                   web app solutions
                 </a>
@@ -338,7 +272,7 @@ const page = () => {
             </div>
           </div>
         </section>
-        {/* Why section */}
+
         <section className="max-w-7xl w-full mx-auto md:py-20 py-10 px-4">
           <div className="flex justify-start w-full">
             <div className="text-3xl sm:text-[40px] font-bold sm:w-[50%] w-full">
@@ -350,11 +284,13 @@ const page = () => {
               {/* All works <ArrowForwardIcon /> */}
             </Link>
             <div className="w-full sm:w-2/4 text-lg">
-              At Webgrid, we blend cutting-edge design with technical expertise
-              to deliver top-tier app solutions. Our focus is on creating
-              visually striking, user-centric apps that drive engagement and
-              business growth. Trust us for efficiency, innovation, and
-              exceptional design.
+              At WebGrid, we blend innovative web design with practical
+              functionality, ensuring each project is visually appealing and
+              user-centric. Our experienced team excels at transforming your
+              vision into a digital reality, prioritizing your brand identity
+              and audience engagement. With a proven track record of delivering
+              bespoke, high-quality web solutions, we customize our services to
+              align with your unique needs and goals.
             </div>
           </div>
           {/* logos */}
@@ -369,8 +305,8 @@ const page = () => {
                 <div
                   className={`relative before:absolute before:w-max before:max-w-[280px] text-lg before:p-2 before:rounded before:opacity-0 before:transition-all before:duration-[0.6s] before:transform before:top-40 before:pointer-events-none group-hover:before:opacity-100 group-hover:before:top-4 ${
                     index < logosData.length - 1
-                      ? "before:-right-72"
-                      : "before:-left-72"
+                      ? 'before:-right-72'
+                      : 'before:-left-72'
                   } before:content-[attr(data-description)]`}
                   data-description={item.description}
                 >
@@ -379,8 +315,8 @@ const page = () => {
                     alt="logo"
                     className={`w-[300px] transition-opacity duration-300 ${
                       hoveredIndex !== null && hoveredIndex !== index
-                        ? "opacity-5"
-                        : "opacity-100"
+                        ? 'opacity-5'
+                        : 'opacity-100'
                     }`}
                   />
                 </div>
@@ -388,7 +324,7 @@ const page = () => {
             ))}
           </div>
         </section>
-        {/* Clients section */}
+
         <section className="max-w-7xl w-full mx-auto py-10 md:py-20 px-4">
           <div className="flex justify-start w-full">
             <div className="text-3xl sm:text-[40px] font-bold sm:w-[50%] w-full">
@@ -405,7 +341,7 @@ const page = () => {
             </div>
           </div>
         </section>
-        {/* comapnies section */}
+
         <section className="max-w-7xl w-full mx-auto">
           <Logo />
         </section>
@@ -418,7 +354,6 @@ const page = () => {
               <TestimonialCarousel />
             </div>
           </div>
-          {/* FAQ */}
           <div className="md:py-10 md:mt-10">
             <h2 className="font-bold md:text-5xl text-4xl text-center">FAQ</h2>
             <Faq />

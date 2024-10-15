@@ -57,9 +57,7 @@ const page = () => {
             </div>
           </div>
           <div className="flex justify-between w-full mt-4 text-lg text-slate-800">
-            <Link className="w-28 sm:w-36" href="/work">
-              {/* All works <ArrowForwardIcon /> */}
-            </Link>
+            <Link className="w-28 sm:w-36" href="/work"></Link>
             <div className="w-full sm:w-2/4 text-lg">
               We specialize in working with digital products and brands,
               regardless of the size and lifecycle stage, from startups to
@@ -68,12 +66,10 @@ const page = () => {
             </div>
           </div>
         </section>
-        {/* case studies section */}
         <section className=" h-fit bg-black text-white md:py-20 py-10 px-4">
           <div className="mx-auto max-w-7xl">
             <h2 className="font-bold md:text-4xl text-[26px]">Case studies</h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-14 gap-10 py-14">
-              {/* video */}
               <div
                 onMouseEnter={(e) =>
                   e.currentTarget.querySelector('video').play()
@@ -83,38 +79,24 @@ const page = () => {
                 }
               >
                 <video
-                  poster="https://www.datocms-assets.com/22695/1721808442-main-reel.jpg"
                   playsInline
-                  //   preload="auto"
                   muted
-                  //   autoPlay
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
                   <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/low.mp4"
-                    type="video/mp4"
-                    media="(max-width: 600px)"
-                  />
-                  <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/medium.mp4"
-                    type="video/mp4"
-                    media="(min-width: 601px) and (max-width: 1023px)"
-                  />
-                  <source
-                    src="https://www.datocms-assets.com/22695/1715091338-30fps.mp4"
+                    src="https://www.datocms-assets.com/22695/1724924838-clearbit_work_teaser.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
                 </video>
                 <div>
-                  <h4 className="text-3xl font-bold mt-6">Salesforce</h4>
+                  <h4 className="text-3xl font-bold mt-6">Clearbit</h4>
                   <p className="mt-2 opacity-50">
-                    Developing micro-interactions for the Lightning Design
-                    System
+                    Website design for a B2B data provider platform with over 50
+                    million company records
                   </p>
                 </div>
               </div>
-              {/* video */}
               <div
                 onMouseEnter={(e) =>
                   e.currentTarget.querySelector('video').play()
@@ -124,38 +106,23 @@ const page = () => {
                 }
               >
                 <video
-                  poster="https://www.datocms-assets.com/22695/1721808442-main-reel.jpg"
                   playsInline
-                  //   preload="auto"
                   muted
-                  //   autoPlay
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
                   <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/low.mp4"
-                    type="video/mp4"
-                    media="(max-width: 600px)"
-                  />
-                  <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/medium.mp4"
-                    type="video/mp4"
-                    media="(min-width: 601px) and (max-width: 1023px)"
-                  />
-                  <source
-                    src="https://www.datocms-assets.com/22695/1715091338-30fps.mp4"
+                    src="https://www.datocms-assets.com/22695/1688546419-descript_work_teaser.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
                 </video>
                 <div>
-                  <h4 className="text-3xl font-bold mt-6">Turo</h4>
+                  <h4 className="text-3xl font-bold mt-6">Descript</h4>
                   <p className="mt-2 opacity-50">
-                    Redesign of the support portal and 30% improvement in users’
-                    ability to get the answers they want
+                    Design for the world's first audio word processor
                   </p>
                 </div>
               </div>
-              {/* video */}
               <div
                 onMouseEnter={(e) =>
                   e.currentTarget.querySelector('video').play()
@@ -165,38 +132,23 @@ const page = () => {
                 }
               >
                 <video
-                  poster="https://www.datocms-assets.com/22695/1721808442-main-reel.jpg"
                   playsInline
-                  //   preload="auto"
                   muted
-                  //   autoPlay
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
                   <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/low.mp4"
-                    type="video/mp4"
-                    media="(max-width: 600px)"
-                  />
-                  <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/medium.mp4"
-                    type="video/mp4"
-                    media="(min-width: 601px) and (max-width: 1023px)"
-                  />
-                  <source
-                    src="https://www.datocms-assets.com/22695/1715091338-30fps.mp4"
+                    src="https://www.datocms-assets.com/22695/1688546665-mozilla_labs_work_teaser.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
                 </video>
                 <div>
-                  <h4 className="text-3xl font-bold mt-6">Tile</h4>
+                  <h4 className="text-3xl font-bold mt-6">Mozilla Labs</h4>
                   <p className="mt-2 opacity-50">
-                    Designing a new onboarding flow that increased completed
-                    sessions to over 60%
+                    Designing a website for innovative projects by Mozilla
                   </p>
                 </div>
               </div>
-              {/* video */}
               <div
                 onMouseEnter={(e) =>
                   e.currentTarget.querySelector('video').play()
@@ -206,79 +158,40 @@ const page = () => {
                 }
               >
                 <video
-                  poster="https://www.datocms-assets.com/22695/1721808442-main-reel.jpg"
                   playsInline
-                  //   preload="auto"
                   muted
-                  //   autoPlay
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
                   <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/low.mp4"
-                    type="video/mp4"
-                    media="(max-width: 600px)"
-                  />
-                  <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/medium.mp4"
-                    type="video/mp4"
-                    media="(min-width: 601px) and (max-width: 1023px)"
-                  />
-                  <source
-                    src="https://www.datocms-assets.com/22695/1715091338-30fps.mp4"
+                    src="https://www.datocms-assets.com/22695/1688547152-transcend_work_teaser.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
                 </video>
                 <div>
-                  <h4 className="text-3xl font-bold mt-6">Tile</h4>
+                  <h4 className="text-3xl font-bold mt-6">Transcend</h4>
                   <p className="mt-2 opacity-50">
-                    Designing a new onboarding flow that increased completed
-                    sessions to over 60%
+                    Branding and website for a data privacy company with 5M+
+                    access & erasure requests fulfilled to date
                   </p>
                 </div>
               </div>
-              {/* video */}
-              <div
-                onMouseEnter={(e) =>
-                  e.currentTarget.querySelector('video').play()
-                }
-                onMouseLeave={(e) =>
-                  e.currentTarget.querySelector('video').pause()
-                }
-              >
-                <video
-                  poster="https://www.datocms-assets.com/22695/1721808442-main-reel.jpg"
-                  playsInline
-                  //   preload="auto"
-                  muted
-                  //   autoPlay
-                  className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
-                >
-                  <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/low.mp4"
-                    type="video/mp4"
-                    media="(max-width: 600px)"
+              <div className="group">
+                <div className="rounded-md w-[400px] md:h-[300px] h-[200px] overflow-hidden">
+                  <img
+                    src="https://www.datocms-assets.com/22695/1687870858-filecoin_work_cover.png"
+                    alt=""
+                    className="w-full rounded-md h-full object-cover group-hover:scale-105 duration-300"
                   />
-                  <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/medium.mp4"
-                    type="video/mp4"
-                    media="(min-width: 601px) and (max-width: 1023px)"
-                  />
-                  <source
-                    src="https://www.datocms-assets.com/22695/1715091338-30fps.mp4"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+                </div>
                 <div>
-                  <h4 className="text-3xl font-bold mt-6">Tile</h4>
+                  <h4 className="text-3xl font-bold mt-6">Filecoin</h4>
                   <p className="mt-2 opacity-50">
-                    Designing a new onboarding flow that increased completed
-                    sessions to over 60%
+                    Website for a blockchain data storage network that raised
+                    more than $250M+ at ICO
                   </p>
                 </div>
               </div>
-              {/* video */}
               <div
                 onMouseEnter={(e) =>
                   e.currentTarget.querySelector('video').play()
@@ -288,41 +201,27 @@ const page = () => {
                 }
               >
                 <video
-                  poster="https://www.datocms-assets.com/22695/1721808442-main-reel.jpg"
                   playsInline
-                  //   preload="auto"
                   muted
-                  //   autoPlay
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
                   <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/low.mp4"
-                    type="video/mp4"
-                    media="(max-width: 600px)"
-                  />
-                  <source
-                    src="https://stream.mux.com/usSb01nHvu4pT01e5qFmoll61TqYzq5tQR/medium.mp4"
-                    type="video/mp4"
-                    media="(min-width: 601px) and (max-width: 1023px)"
-                  />
-                  <source
-                    src="https://www.datocms-assets.com/22695/1715091338-30fps.mp4"
+                    src="https://www.datocms-assets.com/22695/1725357030-metaspark_work_teaser.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
                 </video>
                 <div>
-                  <h4 className="text-3xl font-bold mt-6">Tile</h4>
+                  <h4 className="text-3xl font-bold mt-6">MetaSpark</h4>
                   <p className="mt-2 opacity-50">
-                    Designing a new onboarding flow that increased completed
-                    sessions to over 60%
+                    Design for a company that makes project managers 6X more
+                    productive with AI
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {/* Services section */}
         <section className="py-20 max-w-7xl mx-auto">
           <h2 className="font-bold md:text-[40px] text-3xl px-10 text-center">
             Our capabilities in web design services
@@ -372,7 +271,6 @@ const page = () => {
             </div>
           </div>
         </section>
-        {/* Additional services section */}
         <section className="max-w-7xl mx-auto md:py-20 py-16">
           <h2 className="font-bold md:text-[40px] text-4xl text-center">
             Additional services
@@ -448,48 +346,47 @@ const page = () => {
             </div>
           </div>
         </section>
-        {/* Why section */}
         <section className="max-w-5xl mx-auto">
           <div>
-            <h4 className="font-bold text-5xl text-center">Why Webgrid?</h4>
+            <h4 className="font-bold text-5xl text-center">Why WebGrid?</h4>
             <p className="text-center py-8 text-lg">
-              At Ramotion, we combine innovative design with practical
-              functionality, ensuring each project is not only aesthetically
-              pleasing but also user-centric and effective. Our experienced team
-              excels in transforming your vision into a digital reality,
-              prioritizing your brand identity and audience engagement. With a
-              track record of delivering bespoke, high-quality web solutions, we
-              tailor our services to meet your unique needs and goals
+              At WebGrid, we blend innovative web design with practical
+              functionality, ensuring each project is visually appealing and
+              user-centric. Our experienced team excels at transforming your
+              vision into a digital reality, prioritizing your brand identity
+              and audience engagement. With a proven track record of delivering
+              bespoke, high-quality web solutions, we customize our services to
+              align with your unique needs and goals.
             </p>
           </div>
           <div className=" flex md:flex-row flex-col gap-8 justify-center mt-20 px-20">
             <div className="w-full border-b border-black/20 pb-8">
               <p className="text-lg sm:text-2xl font-semibold">
-                Made in exits by our startup clients
+                Made in Exits by Our Startup Clients
               </p>
               <div className="py-6">
-                <strong className="text-4xl sm:text-7xl">$3.5B</strong>
+                <strong className="text-4xl sm:text-7xl">$50</strong>
               </div>
               <p className="text-base sm:text-lg">
-                Every once in a while, startups we parntered with successfully
-                get acquired.
+                Periodically, startups we partner with achieve successful
+                acquisitions.
               </p>
             </div>
             <div className="w-full border-b border-black/20 pb-8">
               <p className="text-lg sm:text-2xl font-semibold">
-                Raised by our startup clients
+                Raised by Our Startup Clients
               </p>
               <div className="py-6">
-                <strong className="text-4xl sm:text-7xl">$750M+</strong>
+                <strong className="text-4xl sm:text-7xl">$120+</strong>
               </div>
               <p className="text-base sm:text-lg">
-                We work with lots of growing early stage startups to help them
-                design visual identities, websites, and products.
+                We collaborate with numerous growing early-stage startups to
+                help them create compelling visual identities,
+                websites, and products.
               </p>
             </div>
           </div>
         </section>
-        {/* Awards & Recognitions section */}
         <section className="max-w-7xl w-full mx-auto md:py-20 py-10 px-4">
           <div className="flex justify-start w-full">
             <div className="text-3xl sm:text-[40px] font-bold text-center w-full">
@@ -527,7 +424,6 @@ const page = () => {
             ))}
           </div>
         </section>
-        {/* Clients section */}
         <section className="max-w-7xl w-full mx-auto py-10 md:py-20 px-4">
           <div className="flex justify-start w-full">
             <div className="text-3xl sm:text-[40px] font-bold sm:w-[50%] w-full">
@@ -544,7 +440,6 @@ const page = () => {
             </div>
           </div>
         </section>
-        {/* comapnies section */}
         <section className="max-w-7xl w-full mx-auto">
           <Logo />
         </section>
@@ -557,7 +452,6 @@ const page = () => {
               <TestimonialCarousel />
             </div>
           </div>
-          {/* FAQ */}
           <div className="md:py-10 md:mt-10">
             <h2 className="font-bold md:text-5xl text-4xl text-center">FAQ</h2>
             <Faq />
