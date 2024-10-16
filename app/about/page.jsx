@@ -6,27 +6,27 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const items = [
     {
         title: 'Mastery',
-        content: "Constant repetition of processes leads to mastery. We've been honing our craft and improving our processes for years, every day.",
+        content: "Through continuous practice and dedication, we have refined our skills and processes over the past five years, ensuring we deliver top-notch services.",
     },
     {
         title: 'Dependability',
-        content: "You can't create value without a trusted partner. Staying true to our word is an intrinsic need, not just an external obligation.",
+        content: "Creating value hinges on being a trusted partner. We prioritize integrity and commitment to our clients, ensuring that we meet our promises consistently.",
     },
     {
         title: 'Passion',
-        content: "A true love for what you do manifests in where you invest your time. The passion for our work is quiet and calm, yet potent.",
+        content: "Our deep love for web design and development drives us to invest our time and energy into every project. This passion translates into powerful results for our clients.",
     },
     {
         title: 'Flexibility',
-        content: "We rely on our processes but adapt to the specific needs of projects or partners. Flexibility leads to lasting improvements.",
+        content: "While we adhere to established processes, we remain adaptable to the unique needs of each project or partner, leading to innovative and effective solutions.",
     },
     {
         title: 'Discipline',
-        content: "Discipline starts within and shapes all our processes. Though meticulous, our standards ensure solid long-term delivery.",
+        content: "Our disciplined approach shapes our processes and workflows. By maintaining high standards, we ensure reliable and lasting outcomes for our clients.",
     },
     {
         title: 'Creativity',
-        content: "We combine inspiration with workflow to foster systematic creativity and deliver predictable results.",
+        content: "We blend inspiration with systematic workflows to foster creativity, enabling us to deliver exceptional results consistently.",
     },
 ];
 
@@ -51,29 +51,65 @@ const testimonials = {
 
 const companyData = {
     startups: [
-        "Startup A",
-        "Startup B",
-        "Startup C",
-        "Startup D",
-        "Startup E",
-        "Startup F",
+        "https://www.datocms-assets.com/22695/1721390727-10-percent-happier-c.svg",
+        "https://www.datocms-assets.com/22695/1721390730-cafex-c.svg",
+        "https://www.datocms-assets.com/22695/1721390734-cypress-c.svg",
+        "https://www.datocms-assets.com/22695/1721390735-datum-c.svg",
+        "https://www.datocms-assets.com/22695/1721390736-descript-c.svg",
+        "https://www.datocms-assets.com/22695/1721390738-filecoin-c.svg",
+        "https://www.datocms-assets.com/22695/1721390739-flatfile-c.svg",
+        "https://www.datocms-assets.com/22695/1721390741-greenfly-c.svg",
+        "https://www.datocms-assets.com/22695/1721390746-island-c.svg",
+        "https://www.datocms-assets.com/22695/1721390747-justalk-c.svg",
+        "https://www.datocms-assets.com/22695/1721390749-kyber-network-c.svg",
+        "https://www.datocms-assets.com/22695/1721390753-metaspark-c.svg",
+        "https://www.datocms-assets.com/22695/1721390755-nextmv-c.svg",
+        "https://www.datocms-assets.com/22695/1721390757-ninox-c.svg",
+        "https://www.datocms-assets.com/22695/1721390759-proven-c.svg",
+        "https://www.datocms-assets.com/22695/1721886849-puzzle-c.svg",
+        "https://www.datocms-assets.com/22695/1721390761-searchable-c.svg",
+        "https://www.datocms-assets.com/22695/1721390763-stable-c.svg",
+        "https://www.datocms-assets.com/22695/1721390765-transcend-c.svg",
+        "https://www.datocms-assets.com/22695/1721390767-vela-c.svg"
     ],
     smallBusiness: [
-        "Small Biz A",
-        "Small Biz B",
-        "Small Biz C",
-        "Small Biz D",
-        "Small Biz E",
-        "Small Biz F",
+        "https://www.datocms-assets.com/22695/1721391010-crunchbase-c.svg",
+        "https://www.datocms-assets.com/22695/1721391012-emihealth-c.svg",
+        "https://www.datocms-assets.com/22695/1721391013-flyr-c.svg",
+        "https://www.datocms-assets.com/22695/1721391015-go-forward-c.svg",
+        "https://www.datocms-assets.com/22695/1721391017-hackerrank-c.svg",
+        "https://www.datocms-assets.com/22695/1721391019-healthtap-c.svg",
+        "https://www.datocms-assets.com/22695/1721391020-iterable-c.svg",
+        "https://www.datocms-assets.com/22695/1721391022-meyers-research-c.svg",
+        "https://www.datocms-assets.com/22695/1721391023-proemion-c.svg",
+        "https://www.datocms-assets.com/22695/1721391025-redis-c.svg",
+        "https://www.datocms-assets.com/22695/1721391028-tigera-c.svg",
+        "https://www.datocms-assets.com/22695/1721391029-turo-dark-c.svg",
+        "https://www.datocms-assets.com/22695/1721391031-volley-c.svg",
+        "https://www.datocms-assets.com/22695/1721391033-volusion-c.svg",
+        "https://www.datocms-assets.com/22695/1721391035-xsolla-c.svg"
     ],
     enterprises: [
-        "Enterprise A",
-        "Enterprise B",
-        "Enterprise C",
-        "Enterprise D",
-        "Enterprise E",
-        "Enterprise F",
-    ],
+        "https://www.datocms-assets.com/22695/1721391211-adobe-c.svg",
+        "https://www.datocms-assets.com/22695/1721391214-avast-c.svg",
+        "https://www.datocms-assets.com/22695/1721391216-bank-al-etihad-c.svg",
+        "https://www.datocms-assets.com/22695/1721391219-cbre-c.svg",
+        "https://www.datocms-assets.com/22695/1721391225-itt-c.svg",
+        "https://www.datocms-assets.com/22695/1721391227-kindercare-c.svg",
+        "https://www.datocms-assets.com/22695/1721391229-mozilla-c.svg",
+        "https://www.datocms-assets.com/22695/1715859145-nbc-c.svg",
+        "https://www.datocms-assets.com/22695/1721391379-netflix-c.svg",
+        "https://www.datocms-assets.com/22695/1721391381-okta-c.svg",
+        "https://www.datocms-assets.com/22695/1721391383-opera-c.svg",
+        "https://www.datocms-assets.com/22695/1721391386-oppo-c.svg",
+        "https://www.datocms-assets.com/22695/1721886872-opswat-c.svg",
+        "https://www.datocms-assets.com/22695/1721886874-orca-c.svg",
+        "https://www.datocms-assets.com/22695/1721391388-salesforce-c.svg",
+        "https://www.datocms-assets.com/22695/1721391391-southern-company-c.svg",
+        "https://www.datocms-assets.com/22695/1721391393-stripe-c.svg",
+        "https://www.datocms-assets.com/22695/1721391396-universal-music-c.svg",
+        "https://www.datocms-assets.com/22695/1721391398-xero-c.svg"
+    ]
 };
 
 const companiesList = [
@@ -176,17 +212,17 @@ const About = () => {
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                         <div class="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-md">
-                            <h2 class="text-5xl font-bold text-black-600">70+</h2>
+                            <h2 class="text-5xl font-bold text-black-600">5+</h2>
                             <p class="text-lg text-gray-700 mt-2">Years in the industry</p>
                         </div>
 
                         <div class="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-md">
-                            <h2 class="text-5xl font-bold text-black-600">15</h2>
+                            <h2 class="text-5xl font-bold text-black-600">5</h2>
                             <p class="text-lg text-gray-700 mt-2">Startup clients raised</p>
                         </div>
 
                         <div class="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-md">
-                            <h2 class="text-5xl font-bold text-black-600">$1B+</h2>
+                            <h2 class="text-5xl font-bold text-black-600">$11.90</h2>
                             <p class="text-lg text-gray-700 mt-2">Total funding raised</p>
                         </div>
 
@@ -278,24 +314,10 @@ const About = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
                     {companyData[activeCompanyTab].map((company, index) => (
-                        <div key={index} className="p-4 border rounded-lg shadow-md bg-gray-100 text-center">
-                            {company}
-                        </div>
-                    ))}
-                </div>
-            </div>
-
-            <div className="container mx-auto px-4 py-10 mt-10">
-                <h2 className="text-4xl font-bold mb-4 text-center">Exits</h2>
-                <p className="text-center mb-6 text-lg text-gray-700">
-                    With more than <span className="font-bold">$6 billion</span> in exits and over <span className="font-bold">$1 billion</span> raised by our clients, our design services have become an inseparable part of their success.
-                </p>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                    {companiesList.map((company, index) => (
-                        <div key={index} className="p-4 border rounded-lg shadow-md bg-gray-100 text-center">
-                            {company}
-                        </div>
+                        // <div key={index} className="p-4 border rounded-lg shadow-md bg-gray-100 text-center">
+                        //     {company}
+                        // </div>
+                        <img src={company} />
                     ))}
                 </div>
             </div>

@@ -1,11 +1,10 @@
-"use client"
+"use client";
 import React from 'react';
 import Image from 'next/image';
 
 const Footer = () => {
   return (
     <footer className="bg-white text-black p-8 w-full">
-
       <div className='flex flex-col items-center text-center w-full max-w-[800px] mx-auto px-4 mt-16'>
         <h6 className='text-xl md:text-2xl text-[#39c6b3]'>
           [ 80+ delivered projects ]
@@ -18,53 +17,55 @@ const Footer = () => {
         </h6>
       </div>
 
-      <div className="container grid grid-cols-1 md:grid-cols-4 gap-8 mt-16">
-        <div>
-        <img src="/images/logo.jpeg" height={150} width={150} alt="Logo" />
-          <p className="text-xl mt-2">Since 2015, we’ve helped 80+ fast-growing companies in over 20 different industries build web, mobile and desktop apps that make an impact.</p>
+      {/* Divider */}
+      <div className="my-8">
+        <hr className="border-gray-700" />
+      </div>
+
+      <div className="container grid grid-cols-1 md:grid-cols-4 gap-8 mt-16 text-center">
+        <div className="flex flex-col items-center">
+          <img src="/images/logo.jpeg" height={150} width={150} alt="Logo" />
+          <p className="text-xl mt-2 text-center">Since 2015, we’ve helped 80+ fast-growing companies in over 20 different industries build web, mobile and desktop apps that make an impact.</p>
         </div>
 
-        <div>
+        <div className="flex flex-col items-center">
           <h3 className="text-lg text-[#6f7984] font-semibold">SERVICES</h3>
-          <ul className="mt-2 space-y-1">
-            <a href="#service1" className="block text-black py-2">Web development</a>
-            <a href="#service2" className="block text-black py-2">Mobile app development</a>
-            <a href="#service3" className="block text-black py-2">UI/UI Development</a>
-            <a href="#service4" className="block text-black py-2">Desktop app development</a>
-            <a href="#service5" className="block text-black py-2">Digital product development</a>
+          <ul className="mt-2 space-y-1 text-center">
+            <a href="/web-design" className="block text-black py-2">Web development</a>
+            <a href="/app-design" className="block text-black py-2">Mobile app development</a>
+            <a href="/ui-ux-design" className="block text-black py-2">UI/UX Development</a>
           </ul>
         </div>
 
-        <div>
+        <div className="flex flex-col items-center">
           <h3 className="text-lg text-[#6f7984] font-semibold">Technologies</h3>
-          <ul className="mt-2 space-y-1">
-            <a href="#team" className="block text-black py-2">React js</a>
-            <a href="#mission" className="block text-black py-2">Node js</a>
+          <ul className="mt-2 space-y-1 text-center">
+            <a href="#team" className="block text-black py-2">React.js</a>
+            <a href="#mission" className="block text-black py-2">Node.js</a>
             <a href="#vision" className="block text-black py-2">React Native</a>
-            <a href="#history" className="block text-black py-2">Next js</a>
+            <a href="#history" className="block text-black py-2">Next.js</a>
           </ul>
         </div>
 
-        <div>
+        <div className="flex flex-col items-center">
           <h3 className="text-lg text-[#6f7984] font-semibold">Industries</h3>
-          <ul className="mt-2 space-y-1">
+          <ul className="mt-2 space-y-1 text-center">
             <a href="#team" className="block text-black py-2">Banking</a>
-            <a href="#mission" className="block text-black py-2">Bloging</a>
+            <a href="#mission" className="block text-black py-2">Blogging</a>
             <a href="#vision" className="block text-black py-2">Fintech</a>
             <a href="#history" className="block text-black py-2">Insurance</a>
           </ul>
         </div>
-
       </div>
 
       <div className="mt-8 border-t border-gray-700 pt-4">
-        <div className="container flex flex-col md:flex-row justify-between items-center">
+        <div className="container flex flex-col md:flex-row justify-between items-center text-center">
           <p className="text-black text-sm">&copy; {new Date().getFullYear()} WebGrid. All rights reserved.</p>
-          <div className="flex space-x-4 mt-2 md:mt-0">
+          <div className="flex flex-col md:flex-row space-x-0 md:space-x-4 mt-2 md:mt-0">
             <a href="/privacy-policy" className="text-black text-sm">Privacy Policy</a>
             <a href="/terms-and-conditions" className="text-black text-sm">Terms & Conditions</a>
           </div>
-          <div className="flex space-x-4 mt-2 md:mt-0">
+          <div className="flex space-x-4 mt-2 md:mt-0 justify-center">
             <a href="#" className="text-black">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22c-5.512 0-10-4.488-10-10S6.488 2 12 2s10 4.488 10 10-4.488 10-10 10zm-5-10h-3v-4h3v-1.5c0-2.982 1.617-4.5 4.5-4.5 1.167 0 2.317.195 2.317.195v3h-1.307c-1.289 0-1.685.8-1.685 1.613V12h4l-.644 4h-3.356v8h-4v-8z" />
@@ -84,7 +85,6 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-
   );
 };
 
