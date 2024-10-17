@@ -1,34 +1,34 @@
-'use client';
-import Link from 'next/link';
-import React, { useState } from 'react';
-import TestimonialCarousel from '../components/pages/testimonial';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import Logo from '../components/pages/logo';
-import Faq from '../components/Faq';
+"use client";
+import Link from "next/link";
+import React, { useState } from "react";
+import TestimonialCarousel from "../components/pages/testimonial";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import Logo from "../components/pages/logo";
+import Faq from "../components/Faq";
 
 const logosData = [
   {
-    logo: 'https://www.datocms-assets.com/22695/1715843667-netflix-c.svg',
-    description: 'Series of visual concepts for improving the user experience',
+    logo: "https://www.datocms-assets.com/22695/1715843667-netflix-c.svg",
+    description: "Series of visual concepts for improving the user experience",
   },
   {
-    logo: 'https://www.datocms-assets.com/22695/1715859094-cbre-c.svg',
+    logo: "https://www.datocms-assets.com/22695/1715859094-cbre-c.svg",
     description:
       "Marketing website for a subsidiary of the CBRE Group's co-working space company",
   },
   {
-    logo: 'https://www.datocms-assets.com/22695/1715843686-stripe-c.svg',
+    logo: "https://www.datocms-assets.com/22695/1715843686-stripe-c.svg",
     description:
-      'Iconography design for a payments infrastructure company with 250M+ API requests per day',
+      "Iconography design for a payments infrastructure company with 250M+ API requests per day",
   },
   {
-    logo: 'https://www.datocms-assets.com/22695/1715859145-nbc-c.svg',
-    description: 'Official Apple tvOS app user interface development',
+    logo: "https://www.datocms-assets.com/22695/1715859145-nbc-c.svg",
+    description: "Official Apple tvOS app user interface development",
   },
   {
-    logo: 'https://www.datocms-assets.com/22695/1715843699-mozilla-c.svg',
+    logo: "https://www.datocms-assets.com/22695/1715843699-mozilla-c.svg",
     description:
-      'Official Firefox rebrand and ongoing support for design projects at Mozilla',
+      "Official Firefox rebrand and ongoing support for design projects at Mozilla",
   },
 ];
 
@@ -72,10 +72,10 @@ const page = () => {
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-14 gap-10 py-14">
               <div
                 onMouseEnter={(e) =>
-                  e.currentTarget.querySelector('video').play()
+                  e.currentTarget.querySelector("video").play()
                 }
                 onMouseLeave={(e) =>
-                  e.currentTarget.querySelector('video').pause()
+                  e.currentTarget.querySelector("video").pause()
                 }
               >
                 <video
@@ -99,10 +99,10 @@ const page = () => {
               </div>
               <div
                 onMouseEnter={(e) =>
-                  e.currentTarget.querySelector('video').play()
+                  e.currentTarget.querySelector("video").play()
                 }
                 onMouseLeave={(e) =>
-                  e.currentTarget.querySelector('video').pause()
+                  e.currentTarget.querySelector("video").pause()
                 }
               >
                 <video
@@ -125,10 +125,10 @@ const page = () => {
               </div>
               <div
                 onMouseEnter={(e) =>
-                  e.currentTarget.querySelector('video').play()
+                  e.currentTarget.querySelector("video").play()
                 }
                 onMouseLeave={(e) =>
-                  e.currentTarget.querySelector('video').pause()
+                  e.currentTarget.querySelector("video").pause()
                 }
               >
                 <video
@@ -151,10 +151,10 @@ const page = () => {
               </div>
               <div
                 onMouseEnter={(e) =>
-                  e.currentTarget.querySelector('video').play()
+                  e.currentTarget.querySelector("video").play()
                 }
                 onMouseLeave={(e) =>
-                  e.currentTarget.querySelector('video').pause()
+                  e.currentTarget.querySelector("video").pause()
                 }
               >
                 <video
@@ -194,10 +194,10 @@ const page = () => {
               </div>
               <div
                 onMouseEnter={(e) =>
-                  e.currentTarget.querySelector('video').play()
+                  e.currentTarget.querySelector("video").play()
                 }
                 onMouseLeave={(e) =>
-                  e.currentTarget.querySelector('video').pause()
+                  e.currentTarget.querySelector("video").pause()
                 }
               >
                 <video
@@ -312,10 +312,10 @@ const page = () => {
                 Web app development
               </h4>
               <p className="text-lg">
-                Leverage our strategic{' '}
+                Leverage our strategic{" "}
                 <a href="#" className="underline">
                   web app development
-                </a>{' '}
+                </a>{" "}
                 to create powerful and intuitive online experiences.
               </p>
             </div>
@@ -324,7 +324,7 @@ const page = () => {
                 Design system
               </h4>
               <p className="text-lg">
-                Create robust{' '}
+                Create robust{" "}
                 <a href="#" className="underline">
                   design system to unify teams
                 </a>
@@ -337,7 +337,7 @@ const page = () => {
               </h4>
               <p className="text-lg">
                 Boost your startup's digital reach with our team's expertise in
-                delivering custom{' '}
+                delivering custom{" "}
                 <a href="#" className="underline">
                   web app solutions
                 </a>
@@ -393,7 +393,6 @@ const page = () => {
               Awards & recognitions
             </div>
           </div>
-          {/* logos */}
           <div className="grid md:grid-cols-5 grid-cols-2 gap-4 pt-10">
             {logosData?.map((item, index) => (
               <div
@@ -405,8 +404,8 @@ const page = () => {
                 <div
                   className={`relative before:absolute before:w-max before:max-w-[280px] text-lg before:p-2 before:rounded before:opacity-0 before:transition-all before:duration-[0.6s] before:transform before:top-40 before:pointer-events-none group-hover:before:opacity-100 group-hover:before:top-4 ${
                     index < logosData.length - 1
-                      ? 'before:-right-72'
-                      : 'before:-left-72'
+                      ? "before:-right-72"
+                      : "before:-left-72"
                   } before:content-[attr(data-description)]`}
                   data-description={item.description}
                 >
@@ -415,8 +414,8 @@ const page = () => {
                     alt="logo"
                     className={`w-[300px] transition-opacity duration-300 ${
                       hoveredIndex !== null && hoveredIndex !== index
-                        ? 'opacity-5'
-                        : 'opacity-100'
+                        ? "opacity-5"
+                        : "opacity-100"
                     }`}
                   />
                 </div>
@@ -431,9 +430,7 @@ const page = () => {
             </div>
           </div>
           <div className="flex justify-between w-full text-sm mt-4 sm:text-lg text-slate-800">
-            <Link className="w-28 sm:w-36" href="/work">
-              {/* All works <ArrowForwardIcon /> */}
-            </Link>
+            <Link className="w-28 sm:w-36" href="/work"></Link>
             <div className="w-full sm:w-2/4 text-xl">
               Established brands and growing startups backed by top VC firms
               around the world.
