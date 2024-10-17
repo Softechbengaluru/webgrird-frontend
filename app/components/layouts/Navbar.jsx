@@ -177,6 +177,7 @@ const Navbar = () => {
             <Link
               href="/contact"
               className="relative text-lg font-bold overflow-hidden px-6 py-2 border border-black bg-white text-black rounded-lg transition-all duration-300 ease-in-out hover:text-white hover:bg-black"
+              onClick={handleLinkClick}
             >
               <span className="absolute inset-0 transition-transform duration-300 transform -translate-x-full bg-black z-0 hover:translate-x-0"></span>
               <span className="relative z-10">Contact</span>
