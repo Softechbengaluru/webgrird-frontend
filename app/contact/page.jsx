@@ -120,17 +120,17 @@ const Contact = () => {
 
         <div className="mt-4 text-center">
           <a
-            href="#"
+            href="/"
             className="text-gray-600 hover:underline text-xs md:text-sm mr-4"
           >
             Press Inquiries
           </a>
           <span className="text-gray-600 mr-4">→</span>
           <a
-            href="#"
+            href="/"
             className="text-gray-600 hover:underline text-xs md:text-sm mr-4"
           >
-            Join Ramotion
+            Join WEBGRID
           </a>
           <span className="text-gray-600">→</span>
         </div>
