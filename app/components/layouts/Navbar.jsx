@@ -155,24 +155,22 @@ const Navbar = () => {
                 <span>{isServicesOpen ? "▲" : "▼"}</span>
               </button>
               {isServicesOpen && (
-                <div className="bg-wheat w-full rounded mt-1">
-                  {[
-                    "Web development",
-                    "Mobile app development",
-                    "UI/UX Development",
-                    "Desktop app development",
-                    "Digital product development",
-                  ].map((service, index) => (
-                    <Link
-                      key={index}
-                      href={`#service${index + 1}`}
-                      onClick={handleLinkClick}
-                      className="block text-black px-4 py-2"
-                    >
-                      {service}
-                    </Link>
-                  ))}
-                </div>
+                <div className="absolute left-0 text-black bg-white w-48 rounded mt-1 shadow-lg">
+                {[
+                  { name: "Web development", href: "/web-design" },
+                  { name: "Mobile app development", href: "/app-design" },
+                  { name: "UI/UX Development", href: "/ui-ux-design" },
+                ].map((service, index) => (
+                  <Link
+                    key={index}
+                    href={service.href}
+                    onClick={handleLinkClick}
+                    className="relative block text-gray-700 hover:text-black-900 hover:font-bold group px-4 py-2"
+                  >
+                    {service.name}
+                  </Link>
+                ))}
+              </div>
               )}
             </div>
             <Link
