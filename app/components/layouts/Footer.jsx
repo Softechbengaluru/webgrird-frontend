@@ -1,23 +1,21 @@
 "use client";
-import React from 'react';
-import Image from 'next/image';
-
+import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-white text-black p-8 w-full">
-      <div className='flex flex-col items-center text-center w-full max-w-[800px] mx-auto px-4 mt-16'>
-        <h6 className='text-xl md:text-2xl text-[#39c6b3]'>
-          [ 80+ delivered projects ]
+      <div className="flex flex-col items-center text-center w-full max-w-[800px] mx-auto px-4 mt-16">
+        <h6 className="text-2xl md:text-4xl text-[#00008B] font-bold">
+          [ 40+ delivered projects ]
         </h6>
         <h2 className="text-[30px] md:text-[52px] mt-8 leading-none">
           See how Webgrid clients are changing the future of tech.
         </h2>
-        <h6 className='text-lg md:text-xl mt-8'>
-          Since 2015, we’ve helped 80+ fast-growing companies in over 20 different industries build web, mobile and desktop apps that make an impact.
+        <h6 className="text-lg md:text-xl mt-8">
+          Since 2019, we’ve helped 40+ fast-growing companies in over 20
+          different industries build web, mobile and desktop apps that make an
+          impact.
         </h6>
       </div>
-
-      {/* Divider */}
       <div className="my-8">
         <hr className="border-gray-700" />
       </div>
@@ -25,45 +23,77 @@ const Footer = () => {
       <div className="container grid grid-cols-1 md:grid-cols-4 gap-8 mt-16 text-center">
         <div className="flex flex-col items-center">
           <img src="/images/logo.jpeg" height={150} width={150} alt="Logo" />
-          <p className="text-xl mt-2 text-center">Since 2015, we’ve helped 80+ fast-growing companies in over 20 different industries build web, mobile and desktop apps that make an impact.</p>
+          <p className="text-xl mt-2 text-center">
+            Since 2019, we’ve helped 80+ fast-growing companies in over 20
+            different industries build web, mobile and desktop apps that make an
+            impact.
+          </p>
         </div>
 
         <div className="flex flex-col items-center">
           <h3 className="text-lg text-[#6f7984] font-semibold">SERVICES</h3>
           <ul className="mt-2 space-y-1 text-center">
-            <a href="/web-design" className="block text-black py-2">Web development</a>
-            <a href="/app-design" className="block text-black py-2">Mobile app development</a>
-            <a href="/ui-ux-design" className="block text-black py-2">UI/UX Development</a>
+            <a href="/web-design" className="block text-black py-2">
+              Web development
+            </a>
+            <a href="/app-design" className="block text-black py-2">
+              Mobile app development
+            </a>
+            <a href="/ui-ux-design" className="block text-black py-2">
+              UI/UX Development
+            </a>
           </ul>
         </div>
 
         <div className="flex flex-col items-center">
           <h3 className="text-lg text-[#6f7984] font-semibold">Technologies</h3>
           <ul className="mt-2 space-y-1 text-center">
-            <a href="#team" className="block text-black py-2">React.js</a>
-            <a href="#mission" className="block text-black py-2">Node.js</a>
-            <a href="#vision" className="block text-black py-2">React Native</a>
-            <a href="#history" className="block text-black py-2">Next.js</a>
+            <a href="#team" className="block text-black py-2">
+              React.js
+            </a>
+            <a href="#mission" className="block text-black py-2">
+              Node.js
+            </a>
+            <a href="#vision" className="block text-black py-2">
+              React Native
+            </a>
+            <a href="#history" className="block text-black py-2">
+              Next.js
+            </a>
           </ul>
         </div>
 
         <div className="flex flex-col items-center">
           <h3 className="text-lg text-[#6f7984] font-semibold">Industries</h3>
           <ul className="mt-2 space-y-1 text-center">
-            <a href="#team" className="block text-black py-2">Banking</a>
-            <a href="#mission" className="block text-black py-2">Blogging</a>
-            <a href="#vision" className="block text-black py-2">Fintech</a>
-            <a href="#history" className="block text-black py-2">Insurance</a>
+            <a href="#team" className="block text-black py-2">
+              Banking
+            </a>
+            <a href="#mission" className="block text-black py-2">
+              Blogging
+            </a>
+            <a href="#vision" className="block text-black py-2">
+              Fintech
+            </a>
+            <a href="#history" className="block text-black py-2">
+              Insurance
+            </a>
           </ul>
         </div>
       </div>
 
       <div className="mt-8 border-t border-gray-700 pt-4">
         <div className="container flex flex-col md:flex-row justify-between items-center text-center">
-          <p className="text-black text-sm">&copy; {new Date().getFullYear()} WebGrid. All rights reserved.</p>
+          <p className="text-black text-sm">
+            &copy; {new Date().getFullYear()} WebGrid. All rights reserved.
+          </p>
           <div className="flex flex-col md:flex-row space-x-0 md:space-x-4 mt-2 md:mt-0">
-            <a href="/privacy-policy" className="text-black text-sm">Privacy Policy</a>
-            <a href="/terms-and-conditions" className="text-black text-sm">Terms & Conditions</a>
+            <a href="/privacy-policy" className="text-black text-sm">
+              Privacy Policy
+            </a>
+            <a href="/terms-and-conditions" className="text-black text-sm">
+              Terms & Conditions
+            </a>
           </div>
           <div className="flex space-x-4 mt-2 md:mt-0 justify-center">
             <a href="#" className="text-black">

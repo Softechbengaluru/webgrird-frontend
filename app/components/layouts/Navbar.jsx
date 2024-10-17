@@ -6,16 +6,6 @@ const Navbar = () => {
   const [isServicesOpen, setServicesOpen] = useState(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const servicesRef = useRef(null);
-  const services = [
-    { name: "Web development", path: "web-design" },
-    { name: "Mobile app development", path: "app-design" },
-    { name: "UI/UX Development", path: "ui-ux-design" },
-    { name: "Desktop app development", path: "desktop-app-development" },
-    {
-      name: "Digital product development",
-      path: "/ui-ux/digital-product-development",
-    },
-  ];
 
   const handleClickOutside = (event) => {
     if (
@@ -75,9 +65,14 @@ const Navbar = () => {
           </button>
         </div>
 
-
-        <div className={`hidden md:flex space-x-4 relative h-12`} ref={servicesRef}>
-          <Link href="/work" className="relative text-gray-700 hover:text-black-900 hover:font-bold group px-3 py-2 rounded">
+        <div
+          className={`hidden md:flex space-x-4 relative h-12`}
+          ref={servicesRef}
+        >
+          <Link
+            href="/work"
+            className="relative text-gray-700 hover:text-black-900 hover:font-bold group px-3 py-2 rounded"
+          >
             Work
             <span className="absolute left-0 bottom-[-2px] h-[2px] w-full bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
           </Link>
@@ -98,9 +93,9 @@ const Navbar = () => {
             {isServicesOpen && (
               <div className="absolute left-0 text-black bg-white w-48 rounded mt-1 shadow-lg">
                 {[
-                  { name: 'Web development', href: '/web-design' },
-                  { name: 'Mobile app development', href: '/app-design' },
-                  { name: 'UI/UX Development', href: '/ui-ux-design' }
+                  { name: "Web development", href: "/web-design" },
+                  { name: "Mobile app development", href: "/app-design" },
+                  { name: "UI/UX Development", href: "/ui-ux-design" },
                 ].map((service, index) => (
                   <Link
                     key={index}
@@ -114,14 +109,20 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <Link href="/about" className="relative text-gray-700 hover:text-black-900 hover:font-bold group px-3 py-2 rounded">
+          <Link
+            href="/about"
+            className="relative text-gray-700 hover:text-black-900 hover:font-bold group px-3 py-2 rounded"
+          >
             About
             <span className="absolute left-0 bottom-[-2px] h-[2px] w-full bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
           </Link>
         </div>
 
-        <div className='hidden md:flex'>
-          <Link href="/contact" className="relative text-lg font-bold overflow-hidden px-6 py-2 border border-black bg-white text-black rounded-lg transition-all duration-300 ease-in-out hover:text-white hover:bg-black">
+        <div className="hidden md:flex">
+          <Link
+            href="/contact"
+            className="relative text-lg font-bold overflow-hidden px-6 py-2 border border-black bg-white text-black rounded-lg transition-all duration-300 ease-in-out hover:text-white hover:bg-black"
+          >
             <span className="absolute inset-0 transition-transform duration-300 transform -translate-x-full bg-black z-0 hover:translate-x-0"></span>
             <span className="relative z-10">Contact</span>
           </Link>
@@ -131,22 +132,28 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white max-h-[80vh] overflow-y-auto mobile-menu">
           <div className="flex flex-col space-y-2 p-4">
-            <Link href="/work" className="relative text-gray-600 group px-3 py-2 rounded hover:text-black-900 hover:font-bold">
+            <Link
+              href="/work"
+              className="relative text-gray-600 group px-3 py-2 rounded hover:text-black-900 hover:font-bold"
+            >
               Work
             </Link>
 
             <div className="relative">
-              <button onClick={toggleServices} className="relative text-gray-600 bg-white px-3 py-2 rounded flex justify-between w-full hover:text-black-900 hover:font-bold">
+              <button
+                onClick={toggleServices}
+                className="relative text-gray-600 bg-white px-3 py-2 rounded flex justify-between w-full hover:text-black-900 hover:font-bold"
+              >
                 Capabilities
                 <span>{isServicesOpen ? "▲" : "▼"}</span>
               </button>
               {isServicesOpen && (
                 <div className="bg-wheat w-full rounded mt-1">
                   {[
-                  { name: 'Web development', href: '/web-design' },
-                  { name: 'Mobile app development', href: '/app-design' },
-                  { name: 'UI/UX Development', href: '/ui-ux-design' }
-                ].map((service, index) => (
+                    { name: "Web development", href: "/web-design" },
+                    { name: "Mobile app development", href: "/app-design" },
+                    { name: "UI/UX Development", href: "/ui-ux-design" },
+                  ].map((service, index) => (
                     <Link
                       key={index}
                       href={service.href}
@@ -160,17 +167,22 @@ const Navbar = () => {
               )}
             </div>
 
-            <Link href="/about" className="relative text-gray-600 group px-3 py-2 rounded hover:text-black-900 hover:font-bold">
+            <Link
+              href="/about"
+              className="relative text-gray-600 group px-3 py-2 rounded hover:text-black-900 hover:font-bold"
+            >
               About
             </Link>
 
-            <Link href="/contact" className="relative text-lg font-bold overflow-hidden px-6 py-2 border border-black bg-white text-black rounded-lg transition-all duration-300 ease-in-out hover:text-white hover:bg-black">
+            <Link
+              href="/contact"
+              className="relative text-lg font-bold overflow-hidden px-6 py-2 border border-black bg-white text-black rounded-lg transition-all duration-300 ease-in-out hover:text-white hover:bg-black"
+            >
               <span className="absolute inset-0 transition-transform duration-300 transform -translate-x-full bg-black z-0 hover:translate-x-0"></span>
               <span className="relative z-10">Contact</span>
             </Link>
           </div>
         </div>
-
       )}
     </nav>
   );
