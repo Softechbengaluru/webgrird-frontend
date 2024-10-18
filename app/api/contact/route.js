@@ -25,7 +25,7 @@ export async function POST(req) {
 
     const mailOptions = {
       from: process.env.EMAIL,
-      to: process.env.EMAIL,
+      to: "narcoscafe8899@gmail.com",
       subject: "New Client wants to connect",
       text: `We have received a new submission from the client. Below are the details provided by the client:
       Name: ${firstname}\n Last-Name: ${lastname}\n Email: ${email}\nPhone: ${phone}`,
