@@ -1,4 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import { withNextVideo } from "next-video/process";
 
-export default nextConfig;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
+  basePath: "/webgrird-frontend",
+};
+
+export default withNextVideo(nextConfig);

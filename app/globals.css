@@ -1,48 +1,16 @@
-/* styles/globals.css */
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
   margin: 0;
-  font-family: sans-serif;
-  background-color: #fafafa; /* Add a background color for visibility */
-}
-
-h2 {
-  color: red; /* Test with a simple style */
-}
-
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: #f8f8f8;
-}
-
-nav {
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
   padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-section {
-  text-align: center;
-  padding: 50px 0;
-  background-color: #f4f4f4;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
+body,
+html {
+  height: 100%;
+  width: 100%;
 }
