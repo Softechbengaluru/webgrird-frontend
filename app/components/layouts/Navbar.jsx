@@ -71,6 +71,7 @@ const Navbar = () => {
         >
           <Link
             href="/work"
+            onClick={handleLinkClick}
             className="relative text-gray-700 hover:text-black-900 hover:font-bold group px-3 py-2 rounded"
           >
             Work
@@ -111,6 +112,7 @@ const Navbar = () => {
           </div>
           <Link
             href="/about"
+            onClick={handleLinkClick}
             className="relative text-gray-700 hover:text-black-900 hover:font-bold group px-3 py-2 rounded"
           >
             About
@@ -121,6 +123,7 @@ const Navbar = () => {
         <div className="hidden md:flex">
           <Link
             href="/contact"
+            onClick={handleLinkClick}
             className="relative text-lg font-bold overflow-hidden px-6 py-2 border border-black bg-white text-black rounded-lg transition-all duration-300 ease-in-out hover:text-white hover:bg-black"
           >
             <span className="absolute inset-0 transition-transform duration-300 transform -translate-x-full bg-black z-0 hover:translate-x-0"></span>
@@ -134,6 +137,7 @@ const Navbar = () => {
           <div className="flex flex-col space-y-2 p-4">
             <Link
               href="/work"
+              onClick={handleLinkClick}
               className="relative text-gray-600 group px-3 py-2 rounded hover:text-black-900 hover:font-bold"
             >
               Work
@@ -169,6 +173,7 @@ const Navbar = () => {
 
             <Link
               href="/about"
+              onClick={handleLinkClick}
               className="relative text-gray-600 group px-3 py-2 rounded hover:text-black-900 hover:font-bold"
             >
               About
@@ -176,6 +181,7 @@ const Navbar = () => {
 
             <Link
               href="/contact"
+              onClick={handleLinkClick}
               className="relative text-lg font-bold overflow-hidden px-6 py-2 border border-black bg-white text-black rounded-lg transition-all duration-300 ease-in-out hover:text-white hover:bg-black"
             >
               <span className="absolute inset-0 transition-transform duration-300 transform -translate-x-full bg-black z-0 hover:translate-x-0"></span>

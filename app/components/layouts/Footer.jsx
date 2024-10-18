@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-white text-black p-8 w-full">
       <div className="flex flex-col items-center text-center w-full max-w-[800px] mx-auto px-4 mt-16">
-        <h6 className="text-2xl md:text-4xl text-[#00008B] font-bold">
+        <h6 className="sm:text-2xl md:text-3xl text-[#00008B] font-bold">
           [ 40+ delivered projects ]
         </h6>
         <h2 className="text-[30px] md:text-[52px] mt-8 leading-none">
