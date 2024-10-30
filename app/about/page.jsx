@@ -251,7 +251,7 @@ const About = () => {
           We empower brands to succeed in digital
         </h2>
         <h6 className="text-lg md:text-xl mt-8">
-          Ramotion is an agency that combines expertise in design, technology,
+          Webgrid is an agency that combines expertise in design, technology,
           and psychology to deliver measurable business outcomes for growing
           startups and established companies. We strategically curate our client
           roster, focusing on relationships where we can deliver distinct,
