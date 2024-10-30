@@ -1,34 +1,34 @@
-'use client';
-import Link from 'next/link';
-import React, { useState } from 'react';
-import TestimonialCarousel from '../components/pages/testimonial';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import Logo from '../components/pages/logo';
-import Faq from '../components/Faq';
+"use client";
+import Link from "next/link";
+import React, { useState } from "react";
+import TestimonialCarousel from "../components/pages/testimonial";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import Logo from "../components/pages/logo";
+import Faq from "../components/Faq";
 
 const logosData = [
   {
-    logo: 'https://www.datocms-assets.com/22695/1715843667-netflix-c.svg',
-    description: 'Series of visual concepts for improving the user experience',
+    logo: "https://www.datocms-assets.com/22695/1715843667-netflix-c.svg",
+    description: "Series of visual concepts for improving the user experience",
   },
   {
-    logo: 'https://www.datocms-assets.com/22695/1715859094-cbre-c.svg',
+    logo: "https://www.datocms-assets.com/22695/1715859094-cbre-c.svg",
     description:
       "Marketing website for a subsidiary of the CBRE Group's co-working space company",
   },
   {
-    logo: 'https://www.datocms-assets.com/22695/1715843686-stripe-c.svg',
+    logo: "https://www.datocms-assets.com/22695/1715843686-stripe-c.svg",
     description:
-      'Iconography design for a payments infrastructure company with 250M+ API requests per day',
+      "Iconography design for a payments infrastructure company with 250M+ API requests per day",
   },
   {
-    logo: 'https://www.datocms-assets.com/22695/1715859145-nbc-c.svg',
-    description: 'Official Apple tvOS app user interface development',
+    logo: "https://www.datocms-assets.com/22695/1715859145-nbc-c.svg",
+    description: "Official Apple tvOS app user interface development",
   },
   {
-    logo: 'https://www.datocms-assets.com/22695/1715843699-mozilla-c.svg',
+    logo: "https://www.datocms-assets.com/22695/1715843699-mozilla-c.svg",
     description:
-      'Official Firefox rebrand and ongoing support for design projects at Mozilla',
+      "Official Firefox rebrand and ongoing support for design projects at Mozilla",
   },
 ];
 
@@ -73,10 +73,10 @@ const page = () => {
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-14 gap-10 py-14">
               <div
                 onMouseEnter={(e) =>
-                  e.currentTarget.querySelector('video').play()
+                  e.currentTarget.querySelector("video").play()
                 }
                 onMouseLeave={(e) =>
-                  e.currentTarget.querySelector('video').pause()
+                  e.currentTarget.querySelector("video").pause()
                 }
               >
                 <video
@@ -101,10 +101,10 @@ const page = () => {
 
               <div
                 onMouseEnter={(e) =>
-                  e.currentTarget.querySelector('video').play()
+                  e.currentTarget.querySelector("video").play()
                 }
                 onMouseLeave={(e) =>
-                  e.currentTarget.querySelector('video').pause()
+                  e.currentTarget.querySelector("video").pause()
                 }
               >
                 <video
@@ -129,10 +129,10 @@ const page = () => {
 
               <div
                 onMouseEnter={(e) =>
-                  e.currentTarget.querySelector('video').play()
+                  e.currentTarget.querySelector("video").play()
                 }
                 onMouseLeave={(e) =>
-                  e.currentTarget.querySelector('video').pause()
+                  e.currentTarget.querySelector("video").pause()
                 }
               >
                 <video
@@ -235,10 +235,10 @@ const page = () => {
                 Web app development
               </h4>
               <p className="text-lg">
-                Leverage our strategic{' '}
+                Leverage our strategic{" "}
                 <a href="#" className="underline">
                   web app development
-                </a>{' '}
+                </a>{" "}
                 to create powerful and intuitive online experiences.
               </p>
             </div>
@@ -247,7 +247,7 @@ const page = () => {
                 Design system
               </h4>
               <p className="text-lg">
-                Create robust{' '}
+                Create robust{" "}
                 <a href="#" className="underline">
                   design system to unify teams
                 </a>
@@ -260,7 +260,7 @@ const page = () => {
               </h4>
               <p className="text-lg">
                 Boost your startup's digital reach with our team's expertise in
-                delivering custom{' '}
+                delivering custom{" "}
                 <a href="#" className="underline">
                   web app solutions
                 </a>
@@ -289,7 +289,7 @@ const page = () => {
                 Made in Exits by Our Startup Clients
               </p>
               <div className="py-6">
-                <strong className="text-4xl sm:text-7xl">$50</strong>
+                <strong className="text-4xl sm:text-7xl">15+</strong>
               </div>
               <p className="text-base sm:text-lg">
                 Periodically, startups we partner with achieve successful
@@ -301,7 +301,7 @@ const page = () => {
                 Raised by Our Startup Clients
               </p>
               <div className="py-6">
-                <strong className="text-4xl sm:text-7xl">$120+</strong>
+                <strong className="text-4xl sm:text-7xl">10k+</strong>
               </div>
               <p className="text-base sm:text-lg">
                 We collaborate with numerous growing early-stage startups to
@@ -312,13 +312,13 @@ const page = () => {
           </div>
         </section>
 
-        <section className="max-w-7xl w-full mx-auto md:py-20 py-10 px-4">
+        {/* <section className="max-w-7xl w-full mx-auto md:py-20 py-10 px-4">
           <div className="flex justify-start w-full">
             <div className="text-3xl sm:text-[40px] font-bold text-center w-full">
               Awards & recognitions
             </div>
           </div>
-          {/* logos */}
+
           <div className="grid md:grid-cols-5 grid-cols-2 gap-4 pt-10">
             {logosData?.map((item, index) => (
               <div
@@ -330,8 +330,8 @@ const page = () => {
                 <div
                   className={`relative before:absolute before:w-max before:max-w-[280px] text-lg before:p-2 before:rounded before:opacity-0 before:transition-all before:duration-[0.6s] before:transform before:top-40 before:pointer-events-none group-hover:before:opacity-100 group-hover:before:top-4 ${
                     index < logosData.length - 1
-                      ? 'before:-right-72'
-                      : 'before:-left-72'
+                      ? "before:-right-72"
+                      : "before:-left-72"
                   } before:content-[attr(data-description)]`}
                   data-description={item.description}
                 >
@@ -340,15 +340,15 @@ const page = () => {
                     alt="logo"
                     className={`w-[300px] transition-opacity duration-300 ${
                       hoveredIndex !== null && hoveredIndex !== index
-                        ? 'opacity-5'
-                        : 'opacity-100'
+                        ? "opacity-5"
+                        : "opacity-100"
                     }`}
                   />
                 </div>
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         <section className="max-w-7xl w-full mx-auto py-10 md:py-20 px-4">
           <div className="flex justify-start w-full">
@@ -386,6 +386,7 @@ const page = () => {
           </div>
           <div className="flex justify-center mt-10 sm:mt-28 mb-10 sm:mb-10">
             <button
+              href="/contact"
               type="submit"
               className="flex px-6 sm:px-11 sm:py-5 2xl:px-28 lg:px-20 lg:h-20 2xl:text-3xl xl:text-2xl xl:h-20 xl:px-20 2xl:h-24 justify-center gap-2 items-center mx-auto shadow-xl font-normal bg-[#262626] backdrop-blur-md text-white isolation-auto border-[#262626] before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-white hover:text-[#262626] before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 py-2 overflow-hidden border-2 rounded-full group"
             >
