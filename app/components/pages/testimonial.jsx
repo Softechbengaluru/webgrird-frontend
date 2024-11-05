@@ -8,7 +8,7 @@ import Image from 'next/image';
 const testimonials = [
     {
         id: 1,
-        text: "Ramotion has been a highly talented, adaptive and collaborative design partner ranging from an entire site re-brand to highly responsive and extensible page, component, graphic and icon designs as we evolved our site.",
+        text: "Webgrid has been a highly talented, adaptive and collaborative design partner ranging from an entire site re-brand to highly responsive and extensible page, component, graphic and icon designs as we evolved our site.",
         author: "Chris Bank",
         title: "Sr. Manager of Customer Online Experience at Okta",
         image: '/Images/Pixels-Wallpaper (38).jpg',
@@ -16,7 +16,7 @@ const testimonials = [
     },
     {
         id: 2,
-        text: "We’ve worked with Ramotion on a large-scale redesign project and the team has been incredibly thoughtful and professional throughout the process. The results speak for themselves!",
+        text: "We’ve worked with Webgrid on a large-scale redesign project and the team has been incredibly thoughtful and professional throughout the process. The results speak for themselves!",
         author: "Jane Doe",
         title: "VP of Product at Another Company",
         image: "/Images/Pixels-Wallpaper (39).jpg",
@@ -24,7 +24,7 @@ const testimonials = [
     },
     {
         id: 3,
-        text: "Ramotion was fast and efficient without sacrificing quality. Their team of designers and developers brought our vision to life and we are thankful for their expertise.",
+        text: "Webgrid was fast and efficient without sacrificing quality. Their team of designers and developers brought our vision to life and we are thankful for their expertise.",
         author: "Chris Chen",
         title: "Head of ColorOS Design Department at Oppo",
         image: "/Images/Pixels-Wallpaper (40).jpg",

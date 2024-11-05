@@ -365,7 +365,7 @@ const page = () => {
                 Made in Exits by Our Startup Clients
               </p>
               <div className="py-6">
-                <strong className="text-4xl sm:text-7xl">$50</strong>
+                <strong className="text-4xl sm:text-7xl">15+</strong>
               </div>
               <p className="text-base sm:text-lg">
                 Periodically, startups we partner with achieve successful
@@ -377,7 +377,7 @@ const page = () => {
                 Raised by Our Startup Clients
               </p>
               <div className="py-6">
-                <strong className="text-4xl sm:text-7xl">$120+</strong>
+                <strong className="text-4xl sm:text-7xl">10k+</strong>
               </div>
               <p className="text-base sm:text-lg">
                 We collaborate with numerous growing early-stage startups to
@@ -387,7 +387,7 @@ const page = () => {
             </div>
           </div>
         </section>
-        <section className="max-w-7xl w-full mx-auto md:py-20 py-10 px-4">
+        {/* <section className="max-w-7xl w-full mx-auto md:py-20 py-10 px-4">
           <div className="flex justify-start w-full">
             <div className="text-3xl sm:text-[40px] font-bold text-center w-full">
               Awards & recognitions
@@ -422,7 +422,7 @@ const page = () => {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
         <section className="max-w-7xl w-full mx-auto py-10 md:py-20 px-4">
           <div className="flex justify-start w-full">
             <div className="text-3xl sm:text-[40px] font-bold sm:w-[50%] w-full">
@@ -454,6 +454,7 @@ const page = () => {
             <Faq />
           </div>
           <div className="flex justify-center mt-10 sm:mt-28 mb-10 sm:mb-10">
+
           <Link href="/contact">
           <button
             type="submit"
@@ -463,6 +464,7 @@ const page = () => {
             <ArrowForwardIcon />
           </button>
           </Link>
+
           </div>
         </section>
       </div>

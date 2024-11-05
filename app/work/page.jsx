@@ -186,6 +186,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center mt-16 sm:mt-28 mb-20 sm:mb-44">
+
           <Link href="/contact">
           <button
             type="submit"
@@ -195,6 +196,7 @@ export default function Home() {
             <ArrowForwardIcon />
           </button>
           </Link>
+
           </div>
         </main>
       </div>
