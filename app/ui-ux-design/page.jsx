@@ -157,7 +157,6 @@ const page = () => {
             </div>
           </div>
         </section>
-
         <section className="py-20 max-w-7xl mx-auto">
           <h2 className="font-bold md:text-[40px] text-3xl px-10 text-center">
             Capabilities in UI/UX design services
