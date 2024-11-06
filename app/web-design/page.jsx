@@ -83,10 +83,7 @@ const page = () => {
                   muted
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
-                  <source
-                    src="https://www.datocms-assets.com/22695/1724924838-clearbit_work_teaser.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="/assets/videos/clearbit.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div>
@@ -110,10 +107,7 @@ const page = () => {
                   muted
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
-                  <source
-                    src="https://www.datocms-assets.com/22695/1688546419-descript_work_teaser.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="/assets/videos/descript.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div>
@@ -137,7 +131,7 @@ const page = () => {
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
                   <source
-                    src="https://www.datocms-assets.com/22695/1688546665-mozilla_labs_work_teaser.mp4"
+                    src="/assets/videos/mozilla_labs.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -162,10 +156,7 @@ const page = () => {
                   muted
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
-                  <source
-                    src="https://www.datocms-assets.com/22695/1688547152-transcend_work_teaser.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="/assets/videos/transcend.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div>
@@ -179,7 +170,7 @@ const page = () => {
               <div className="group">
                 <div className="rounded-md w-[400px] md:h-[300px] h-[200px] overflow-hidden">
                   <img
-                    src="https://www.datocms-assets.com/22695/1687870858-filecoin_work_cover.png"
+                    src="/assets/images/filecoin.png"
                     alt=""
                     className="w-full rounded-md h-full object-cover group-hover:scale-105 duration-300"
                   />
@@ -205,10 +196,7 @@ const page = () => {
                   muted
                   className="rounded-md w-[400px] md:h-[300px] h-[200px] object-cover"
                 >
-                  <source
-                    src="https://www.datocms-assets.com/22695/1725357030-metaspark_work_teaser.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="/assets/videos/metaSpark.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div>
@@ -454,16 +442,15 @@ const page = () => {
             <Faq />
           </div>
           <div className="flex justify-center mt-10 sm:mt-28 mb-10 sm:mb-10">
-
-          <Link href="/contact">
-          <button
-            type="submit"
-            className="flex px-6 sm:px-11 sm:py-5 2xl:px-28 lg:px-20 lg:h-20 2xl:text-3xl xl:text-2xl xl:h-20 xl:px-20 2xl:h-24 justify-center gap-2 items-center mx-auto shadow-xl font-normal bg-[#262626] backdrop-blur-md text-white isolation-auto border-[#262626] before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-white hover:text-[#262626] before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 py-2 overflow-hidden border-2 rounded-full group"
-          >
-            Shall we Talk?
-            <ArrowForwardIcon />
-          </button>
-          </Link>
+            <Link href="/contact">
+              <button
+                type="submit"
+                className="flex px-6 sm:px-11 sm:py-5 2xl:px-28 lg:px-20 lg:h-20 2xl:text-3xl xl:text-2xl xl:h-20 xl:px-20 2xl:h-24 justify-center gap-2 items-center mx-auto shadow-xl font-normal bg-[#262626] backdrop-blur-md text-white isolation-auto border-[#262626] before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-white hover:text-[#262626] before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 py-2 overflow-hidden border-2 rounded-full group"
+              >
+                Shall we Talk?
+                <ArrowForwardIcon />
+              </button>
+            </Link>
           </div>
         </section>
       </div>
