@@ -120,6 +120,7 @@ export default function Hero() {
         </div>
 
         <div className="flex justify-center mt-16 sm:mt-28 mb-20 sm:mb-44">
+        <Link href="/contact">
           <button
             type="submit"
             className="flex px-6 sm:px-11 sm:py-5 2xl:px-28 lg:px-20 lg:h-20 2xl:text-3xl xl:text-2xl xl:h-20 xl:px-20 2xl:h-24 justify-center gap-2 items-center mx-auto shadow-xl font-normal bg-[#262626] backdrop-blur-md text-white isolation-auto border-[#262626] before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-white hover:text-[#262626] before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 py-2 overflow-hidden border-2 rounded-full group"
@@ -127,6 +128,7 @@ export default function Hero() {
             Let’s Connect
             <ArrowForwardIcon />
           </button>
+          </Link>
         </div>
       </div>
     </>
