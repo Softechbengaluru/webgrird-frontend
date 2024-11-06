@@ -11,7 +11,7 @@ const Footer = () => {
           See how Webgrid clients are changing the future of tech.
         </h2>
         <h6 className="text-lg md:text-xl mt-8">
-          Since 2019, we’ve helped 40+ fast-growing companies in over 20
+          Since 2023, we’ve helped 15+ fast-growing companies in over 5
           different industries build web, mobile and desktop apps that make an
           impact.
         </h6>
@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="flex flex-col items-center">
           <img src="/images/logo.jpeg" height={150} width={150} alt="Logo" />
           <p className="text-xl mt-2 text-center">
-            Since 2019, we’ve helped 80+ fast-growing companies in over 20
+            Since 2023, we’ve helped 80+ fast-growing companies in over 5
             different industries build web, mobile and desktop apps that make an
             impact.
           </p>
