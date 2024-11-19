@@ -3,10 +3,14 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Link from "next/link";
 import Logo from "./logo";
 import TestimonialCarousel from "./testimonial";
+import Head from "next/head";
 
 export default function Hero() {
   return (
     <>
+       <Head>
+        <meta name="google-adsense-account" content="ca-pub-6385730756188926" />
+      </Head>
       <div className="sm:mx-3 mx-2 container xl:mx-auto 2xl:mt-44 mt-16 xl:mt-36 flex flex-col min-h-screen w-screen item text-xl leading-tight">
         <div className="text-center text-[24px] sm:text-[30px] flex justify-center md:text-[45px] xl:text-[65px] 2xl:text-[100px] font-bold">
           <h1 className="w-[90%] sm:w-[75%] 2xl:w-2/3 xl:w-2/4">
