@@ -1,0 +1,30 @@
+/* styles/globals.css */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #fafafa; /* Add a background color for visibility */
+  }
+  
+  h2 {
+    color: red; /* Test with a simple style */
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
