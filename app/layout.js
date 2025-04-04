@@ -1,5 +1,4 @@
-import Footer from "./components/layouts/Footer";
-import Navbar from "./components/layouts/Navbar";
+import LayoutWrapper from "./components/LayoutWrapper"; 
 import "./globals.css";
 
 export const metadata = {
@@ -11,13 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="w-full">
-          <Navbar />
-          <div className="mt-32 w-full overflow-x-hidden">
-            {children}
-            <Footer />
-          </div>
-        </div>
+        <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   );
